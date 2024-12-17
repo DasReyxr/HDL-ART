@@ -1,0 +1,13 @@
+//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: 1.9.9 Beta-4 Education
+//Part Number: GW1NZ-LV1QN48C6/I5
+//Device: GW1NZ-1
+//Created Time: Wed 10 30 08:25:12 2024
+
+IO_LOC "BuzzerOUT" 29;
+IO_PORT "BuzzerOUT" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+
+IO_LOC "CLK" 47;
+IO_PORT "CLK" PULL_MODE=UP BANK_VCCIO=1.8;
