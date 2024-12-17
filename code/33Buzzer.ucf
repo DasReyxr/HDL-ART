@@ -1,0 +1,6 @@
+#------- IN ----
+NET "Enable" 			  LOC = P124	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+NET "CLK" LOC = P126;
+
+#---- Out ----
+NET "OUTPUT"                   LOC = P35      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L1P_3           	        Sch = GPIO-P18 
