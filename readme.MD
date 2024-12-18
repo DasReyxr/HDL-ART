@@ -1,6 +1,7 @@
 Here are all my VHDL codes developed for FPGA projects. I worked with two different FPGAs during this course:
 - Tang Nano 1k 
 - Mimas Spartan 6
+
 The most important difference between them is their clock frequencies. The Tang Nano has a 27 MHz clock, while the Spartan operates at 100 MHz. This difference was critical to consider when designing state machines. The following codes need to be changed in case of a different clock frequency
 ## Clock Frequency Adjustment
 The following codes need modifications if a different clock frequency is used:
