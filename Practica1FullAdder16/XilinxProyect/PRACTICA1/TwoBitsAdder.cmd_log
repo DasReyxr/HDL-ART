@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "/home/ise/Xilinx/PRACTICA1/TwoBitsAdder.xst" -ofn "/home/ise/Xilinx/PRACTICA1/TwoBitsAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 TwoBitsAdder.ngc TwoBitsAdder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TwoBitsAdder_map.ncd TwoBitsAdder.ngd TwoBitsAdder.pcf 
+par -w -intstyle ise -ol high -mt off TwoBitsAdder_map.ncd TwoBitsAdder.ncd TwoBitsAdder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TwoBitsAdder.twx TwoBitsAdder.ncd -o TwoBitsAdder.twr TwoBitsAdder.pcf 
+bitgen -intstyle ise -f TwoBitsAdder.ut TwoBitsAdder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TwoBitsAdder.ucf -p xc6slx9-tqg144-3 TwoBitsAdder.ngc TwoBitsAdder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TwoBitsAdder.ucf -p xc6slx9-tqg144-3 TwoBitsAdder.ngc TwoBitsAdder.ngd  
+xst -intstyle ise -ifn "/home/ise/Xilinx/PRACTICA1/TwoBitsAdder.xst" -ofn "/home/ise/Xilinx/PRACTICA1/TwoBitsAdder.syr" 
+xst -intstyle ise -ifn "/home/ise/Xilinx/PRACTICA1/TwoBitsAdder.xst" -ofn "/home/ise/Xilinx/PRACTICA1/TwoBitsAdder.syr" 
+xst -intstyle ise -ifn "/home/ise/Xilinx/PRACTICA1/TwoBitsAdder.xst" -ofn "/home/ise/Xilinx/PRACTICA1/TwoBitsAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TwoBitsAdder.ucf -p xc6slx9-tqg144-3 TwoBitsAdder.ngc TwoBitsAdder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TwoBitsAdder_map.ncd TwoBitsAdder.ngd TwoBitsAdder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TwoBitsAdder.ucf -p xc6slx9-tqg144-3 TwoBitsAdder.ngc TwoBitsAdder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TwoBitsAdder_map.ncd TwoBitsAdder.ngd TwoBitsAdder.pcf 
+par -w -intstyle ise -ol high -mt off TwoBitsAdder_map.ncd TwoBitsAdder.ncd TwoBitsAdder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TwoBitsAdder.twx TwoBitsAdder.ncd -o TwoBitsAdder.twr TwoBitsAdder.pcf -ucf TwoBitsAdder.ucf 
+bitgen -intstyle ise -f TwoBitsAdder.ut TwoBitsAdder.ncd 

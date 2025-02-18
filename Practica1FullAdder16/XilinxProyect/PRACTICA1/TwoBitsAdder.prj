@@ -1,0 +1,3 @@
+vhdl work "HALFADDER.vhd"
+vhdl work "FULLADDER.vhd"
+vhdl work "DESIGN.vhd"
