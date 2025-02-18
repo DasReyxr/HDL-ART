@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica2CarrySkip/Adder16CS/Adder16CS.xst" -ofn "/home/ise/AVm/4to/Practica2CarrySkip/Adder16CS/Adder16CS.syr" 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica2CarrySkip/Adder16CS/Adder16CS.xst" -ofn "/home/ise/AVm/4to/Practica2CarrySkip/Adder16CS/Adder16CS.syr" 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica2CarrySkip/Adder16CS/Adder16CS.xst" -ofn "/home/ise/AVm/4to/Practica2CarrySkip/Adder16CS/Adder16CS.syr" 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica2CarrySkip/XilinxProyect/Adder16CS/Adder16CS.xst" -ofn "/home/ise/AVm/4to/Practica2CarrySkip/XilinxProyect/Adder16CS/Adder16CS.syr" 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica2CarrySkip/XilinxProyect/Adder16CS/Adder16CS.xst" -ofn "/home/ise/AVm/4to/Practica2CarrySkip/XilinxProyect/Adder16CS/Adder16CS.syr" 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica2CarrySkip/XilinxProyect/Adder16CS/Adder16CS.xst" -ofn "/home/ise/AVm/4to/Practica2CarrySkip/XilinxProyect/Adder16CS/Adder16CS.syr" 
