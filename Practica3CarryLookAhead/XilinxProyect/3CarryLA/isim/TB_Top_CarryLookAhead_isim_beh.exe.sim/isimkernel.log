@@ -1,0 +1,28 @@
+Command line:
+   TB_Top_CarryLookAhead_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  35547
+
+Mon Feb 17 21:29:55 2025
+
+
+ Elaboration Time: 0.21 sec
+
+ Current Memory Usage: 198.615 Meg
+
+ Total Signals          : 43
+ Total Nets             : 118
+ Total Signal Drivers   : 75
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 74
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 478
+
+ Total Simulation Time: 0.39 sec
+
+ Current Memory Usage: 276.214 Meg
+
+Mon Feb 17 21:32:32 2025
+

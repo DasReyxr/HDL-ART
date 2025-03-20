@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/TB_Top_CarryLookAhead_isim_beh.exe" -prj "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/TB_Top_CarryLookAhead_beh.prj" "work.TB_Top_CarryLookAhead" 

@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.xst" -ofn "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.syr" 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.xst" -ofn "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.syr" 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.xst" -ofn "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.syr" 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.xst" -ofn "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Top_CarryLookAhead.ngc Top_CarryLookAhead.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_CarryLookAhead_map.ncd Top_CarryLookAhead.ngd Top_CarryLookAhead.pcf 
+par -w -intstyle ise -ol high -mt off Top_CarryLookAhead_map.ncd Top_CarryLookAhead.ncd Top_CarryLookAhead.pcf 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.xst" -ofn "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Top_CarryLookAhead.ngc Top_CarryLookAhead.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_CarryLookAhead_map.ncd Top_CarryLookAhead.ngd Top_CarryLookAhead.pcf 
+par -w -intstyle ise -ol high -mt off Top_CarryLookAhead_map.ncd Top_CarryLookAhead.ncd Top_CarryLookAhead.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Top_CarryLookAhead.twx Top_CarryLookAhead.ncd -o Top_CarryLookAhead.twr Top_CarryLookAhead.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Top_CarryLookAhead.ut Top_CarryLookAhead.ncd 
+bitgen -intstyle ise -f Top_CarryLookAhead.ut Top_CarryLookAhead.ncd 

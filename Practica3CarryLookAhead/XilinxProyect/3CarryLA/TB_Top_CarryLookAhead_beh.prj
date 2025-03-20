@@ -1,0 +1,3 @@
+vhdl work "CP_CLA4Bits.vhd"
+vhdl work "Top_CarryLookAhead.vhd"
+vhdl work "tb.vhd"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.ncd
+OUTFILE=/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

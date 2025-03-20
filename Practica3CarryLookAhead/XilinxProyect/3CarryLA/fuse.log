@@ -1,0 +1,24 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/TB_Top_CarryLookAhead_isim_beh.exe -prj /home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/TB_Top_CarryLookAhead_beh.prj work.TB_Top_CarryLookAhead 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/CP_CLA4Bits.vhd" into library work
+Parsing VHDL file "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/Top_CarryLookAhead.vhd" into library work
+Parsing VHDL file "/home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95432 KB
+Fuse CPU Usage: 7570 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture juve3dstudio of entity CP_CLA4Bits [cp_cla4bits_default]
+Compiling architecture juve3dstudio of entity Top_CarryLookAhead [top_carrylookahead_default]
+Compiling architecture testbench of entity tb_top_carrylookahead
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 7 VHDL Units
+Built simulation executable /home/ise/AVm/4to/Practica3CarryLookAhead/XilinxProyect/3CarryLA/TB_Top_CarryLookAhead_isim_beh.exe
+Fuse Memory Usage: 659096 KB
+Fuse CPU Usage: 7890 ms
+GCC CPU Usage: 1390 ms
