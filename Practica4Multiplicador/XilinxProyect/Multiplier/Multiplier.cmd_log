@@ -1,0 +1,55 @@
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.xst" -ofn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Multiplier_map.ncd Multiplier.ngd Multiplier.pcf 
+par -w -intstyle ise -ol high -mt off Multiplier_map.ncd Multiplier.ncd Multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Multiplier.twx Multiplier.ncd -o Multiplier.twr Multiplier.pcf 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.xst" -ofn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.syr" 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.xst" -ofn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Multiplier_map.ncd Multiplier.ngd Multiplier.pcf 
+par -w -intstyle ise -ol high -mt off Multiplier_map.ncd Multiplier.ncd Multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Multiplier.twx Multiplier.ncd -o Multiplier.twr Multiplier.pcf 
+bitgen -intstyle ise -f Multiplier.ut Multiplier.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.xst" -ofn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Multiplier_map.ncd Multiplier.ngd Multiplier.pcf 
+par -w -intstyle ise -ol high -mt off Multiplier_map.ncd Multiplier.ncd Multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Multiplier.twx Multiplier.ncd -o Multiplier.twr Multiplier.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Multiplier.ut Multiplier.ncd 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.xst" -ofn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Multiplier_map.ncd Multiplier.ngd Multiplier.pcf 
+par -w -intstyle ise -ol high -mt off Multiplier_map.ncd Multiplier.ncd Multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Multiplier.twx Multiplier.ncd -o Multiplier.twr Multiplier.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Multiplier.ut Multiplier.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Multiplier_map.ncd Multiplier.ngd Multiplier.pcf 
+par -w -intstyle ise -ol high -mt off Multiplier_map.ncd Multiplier.ncd Multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Multiplier.twx Multiplier.ncd -o Multiplier.twr Multiplier.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Multiplier.ut Multiplier.ncd 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.xst" -ofn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Multiplier_map.ncd Multiplier.ngd Multiplier.pcf 
+par -w -intstyle ise -ol high -mt 4 Multiplier_map.ncd Multiplier.ncd Multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Multiplier.twx Multiplier.ncd -o Multiplier.twr Multiplier.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Multiplier.ut Multiplier.ncd 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.xst" -ofn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Multiplier_map.ncd Multiplier.ngd Multiplier.pcf 
+par -w -intstyle ise -ol std -mt 4 Multiplier_map.ncd Multiplier.ncd Multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Multiplier.twx Multiplier.ncd -o Multiplier.twr Multiplier.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Multiplier.ut Multiplier.ncd 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.xst" -ofn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Multiplier_map.ncd Multiplier.ngd Multiplier.pcf 
+par -w -intstyle ise -ol std -mt 4 Multiplier_map.ncd Multiplier.ncd Multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Multiplier.twx Multiplier.ncd -o Multiplier.twr Multiplier.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Multiplier.ut Multiplier.ncd 
+xst -intstyle ise -ifn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.xst" -ofn "/home/ise/AVm/4to/Practica4Multiplicador/XilinxProyect/Multiplier/Multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx9-tqg144-3 Multiplier.ngc Multiplier.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Multiplier_map.ncd Multiplier.ngd Multiplier.pcf 
+par -w -intstyle ise -ol std -mt 4 Multiplier_map.ncd Multiplier.ncd Multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Multiplier.twx Multiplier.ncd -o Multiplier.twr Multiplier.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Multiplier.ut Multiplier.ncd 
