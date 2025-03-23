@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/AVm/4to/Practica5MultiplierSIgned/XilinxProyect/Multiplier/Multiplier_isim_beh.exe" -prj "/home/ise/AVm/4to/Practica5MultiplierSIgned/XilinxProyect/Multiplier/Multiplier_beh.prj" "work.Multiplier" 
