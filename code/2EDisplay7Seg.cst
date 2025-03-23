@@ -1,0 +1,22 @@
+//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: 1.9.9 Beta-4 Education
+//Part Number: GW1NZ-LV1QN48C6/I5
+//Device: GW1NZ-1
+//Created Time: Tue 05 28 13:10:34 2024
+
+IO_LOC "Disp[6]" 11;
+IO_PORT "Disp[6]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "Disp[5]" 9;
+IO_PORT "Disp[5]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "Disp[4]" 10;
+IO_PORT "Disp[4]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "Disp[3]" 23;
+IO_PORT "Disp[3]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "Disp[2]" 35;
+IO_PORT "Disp[2]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "Disp[1]" 18;
+IO_PORT "Disp[1]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "Disp[0]" 17;
+IO_PORT "Disp[0]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
