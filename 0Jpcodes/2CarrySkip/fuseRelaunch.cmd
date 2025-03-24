@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/Vm/4to/Jp codes/CarrySkip/tb_isim_beh.exe" -prj "/home/ise/Vm/4to/Jp codes/CarrySkip/tb_beh.prj" "work.tb" 
