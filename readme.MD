@@ -12,9 +12,16 @@ This repository contains VHDL implementations and testbenches for fundamental ar
 
 This practice focuses on designing and simulating three essential arithmetic circuits using **VHDL**:
 
-1. **Full Adder** -
-2. **Carry-Skip Adder** –
-3. **Multiplier** – 
+**Full Adders** 
+1. Full Adder of 16 Bits
+2. Carry Skip 
+3. Carry Look Ahead 
+
+**Multipliers**
+4. Multiplier of 8 Bits
+5. Sign-Magnitude
+6. Two's Complement
+7. Booth
 
 Each module includes:
 - **VHDL code** for implementation.
