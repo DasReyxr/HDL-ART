@@ -46,23 +46,23 @@ begin
     C_A(15)<=C_M(15) and C_Q;
     
     -- Carry --
-    Carry(1) <= (C_A(0) and C_B(0)) or (carry(0) and (C_A(0) xor C_B(i)));
-    Carry(2) <= (C_A(1) and C_B(1)) or (carry(1) and (C_A(1) xor C_B(i)));
-    Carry(3) <= (C_A(2) and C_B(2)) or (carry(2) and (C_A(2) xor C_B(i)));
-    Carry(4) <= (C_A(3) and C_B(3)) or (carry(3) and (C_A(3) xor C_B(i)));
-    Carry(5) <= (C_A(4) and C_B(4)) or (carry(4) and (C_A(4) xor C_B(i)));
-    Carry(6) <= (C_A(5) and C_B(5)) or (carry(5) and (C_A(5) xor C_B(i)));
-    Carry(7) <= (C_A(6) and C_B(6)) or (carry(6) and (C_A(6) xor C_B(i)));
-    Carry(8) <= (C_A(7) and C_B(7)) or (carry(7) and (C_A(7) xor C_B(i)));
-    Carry(9) <= (C_A(8) and C_B(8)) or (carry(8) and (C_A(8) xor C_B(i)));
-    Carry(10) <= (C_A(9) and C_B(9)) or (carry(9) and (C_A(9) xor C_B(i)));
+    Carry(1)  <= (C_A(0)  and C_B(0))  or (carry(0)  and (C_A(0)  xor C_B(i)));
+    Carry(2)  <= (C_A(1)  and C_B(1))  or (carry(1)  and (C_A(1)  xor C_B(i)));
+    Carry(3)  <= (C_A(2)  and C_B(2))  or (carry(2)  and (C_A(2)  xor C_B(i)));
+    Carry(4)  <= (C_A(3)  and C_B(3))  or (carry(3)  and (C_A(3)  xor C_B(i)));
+    Carry(5)  <= (C_A(4)  and C_B(4))  or (carry(4)  and (C_A(4)  xor C_B(i)));
+    Carry(6)  <= (C_A(5)  and C_B(5))  or (carry(5)  and (C_A(5)  xor C_B(i)));
+    Carry(7)  <= (C_A(6)  and C_B(6))  or (carry(6)  and (C_A(6)  xor C_B(i)));
+    Carry(8)  <= (C_A(7)  and C_B(7))  or (carry(7)  and (C_A(7)  xor C_B(i)));
+    Carry(9)  <= (C_A(8)  and C_B(8))  or (carry(8)  and (C_A(8)  xor C_B(i)));
+    Carry(10) <= (C_A(9)  and C_B(9))  or (carry(9)  and (C_A(9)  xor C_B(i)));
     Carry(11) <= (C_A(10) and C_B(10)) or (carry(10) and (C_A(10) xor C_B(i)));
     Carry(12) <= (C_A(11) and C_B(11)) or (carry(11) and (C_A(11) xor C_B(i)));
     Carry(13) <= (C_A(12) and C_B(12)) or (carry(12) and (C_A(12) xor C_B(i)));
     Carry(14) <= (C_A(13) and C_B(13)) or (carry(13) and (C_A(13) xor C_B(i)));
     Carry(15) <= (C_A(14) and C_B(14)) or (carry(14) and (C_A(14) xor C_B(i)));      
     
-    -- Partial Product --
+    -- Partial Product -- 
     C_P(0)  <= C_A(0)  xor C_B(0)  xor carry(0);    
     C_P(1)  <= C_A(1)  xor C_B(1)  xor carry(1);    
     C_P(2)  <= C_A(2)  xor C_B(2)  xor carry(2);    
@@ -84,6 +84,7 @@ begin
     C_Cout   <= carry(16);
 
     
-	end juve3dstudio;
+	end juve3dstudio; 
 
+    
 
