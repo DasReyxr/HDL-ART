@@ -1,0 +1,61 @@
+//
+//Written by GowinSynthesis
+//Product Version "V1.9.9 Beta-4 Education"
+//Tue Mar 25 15:56:30 2025
+
+//Source file index table:
+//file0 "\C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6TwosComplement/DesGenerate-Version/pjt/Adder16Bits.vhd"
+//file1 "\C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6TwosComplement/DesGenerate-Version/pjt/T_design.vhd"
+//file2 "\C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6TwosComplement/DesGenerate-Version/pjt/Vector.vhd"
+`pragma protect begin_protected
+`pragma protect version="2.3"
+`pragma protect author="default"
+`pragma protect author_info="default"
+`pragma protect encrypt_agent="GOWIN"
+`pragma protect encrypt_agent_info="GOWIN Encrypt Version 2.3"
+
+`pragma protect encoding=(enctype="base64", line_length=76, bytes=256)
+`pragma protect key_keyowner="GOWIN",key_keyname="GWK2023-09",key_method="rsa"
+`pragma protect key_block
+KW1zlHbPmOflX5pIRMUcZIDhZ3G+vA1oi+cgdDALWfkLst/2kqzDkb4B7eF9TWcj3Kg0j6oH90BN
+Xlaz9b9vAo2rNJNE3iRH2pCHflgFQ2+OSwWQeJruiR+h5NC3NnLr6iTOSUOj7AR/+4YH+0IwRePe
+Woa7hU/vPbIpItgRqA5pExCjHYv1k//ID49ZxhdfUE+8NeLnC3LGMqY+fdvrxZOWbTZCM3Aunz0m
+YLsft91l+4kw/w2Cvl7sPjSYC9wi4ix8gJwccunqA7+OaaMR5Br6i7i1xkRhnADsNxIG8FeQrmrM
+F42g1vtiLH3s+JKiE1+iXdABOL5D6j0tCxVxTg==
+
+`pragma protect encoding=(enctype="base64", line_length=76, bytes=1664)
+`pragma protect data_keyowner="default-ip-vendor"
+`pragma protect data_keyname="default-ip-key"
+`pragma protect data_method="aes128-cfb"
+`pragma protect data_block
+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
+ghV075jjyopWtOA=
+`pragma protect end_protected

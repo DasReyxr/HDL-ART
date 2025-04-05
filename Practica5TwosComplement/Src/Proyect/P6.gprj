@@ -1,0 +1,14 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NR-9C" pn="GW1NR-LV9QN88PC6/I5">gw1nr9c-004</Device>
+    <FileList>
+        <File path="Comp.vhd" type="file.vhdl" enable="1"/>
+        <File path="Comp2.vhd" type="file.vhdl" enable="1"/>
+        <File path="T_design.vhd" type="file.vhdl" enable="1"/>
+        <File path="Vector.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/P6.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>

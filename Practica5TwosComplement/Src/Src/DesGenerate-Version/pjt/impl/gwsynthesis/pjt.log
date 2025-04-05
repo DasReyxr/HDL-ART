@@ -1,0 +1,65 @@
+GowinSynthesis start
+Running parser ...
+Analyzing VHDL file 'C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\Adder16Bits.vhd'
+Analyzing entity 'propagator'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\Adder16Bits.vhd":10)
+Analyzing architecture 'juve3dstudio'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\Adder16Bits.vhd":19)
+Analyzing VHDL file 'C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd'
+Analyzing entity 'multipliersigned'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":11)
+Analyzing architecture 'juve3dstudio'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":21)
+WARN  (EX4557) : Actual for formal port 'c_a' is neither a static name nor a globally static expression("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":80)
+WARN  (EX4557) : Actual for formal port 'c_a' is neither a static name nor a globally static expression("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":87)
+Analyzing VHDL file 'C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\Vector.vhd'
+Analyzing entity 'vectormult'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\Vector.vhd":10)
+Analyzing architecture 'juve3dstudio'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\Vector.vhd":22)
+Processing 'MultiplierSigned(juve3dstudio)'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":11)
+Processing 'Propagator(juve3dstudio)'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\Adder16Bits.vhd":10)
+Processing 'VectorMult(juve3dstudio)'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\Vector.vhd":10)
+WARN  (EX1998) : Net 'PX[7][15]' does not have a driver("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":24)
+NOTE  (EX0101) : Current top module is "MultiplierSigned"
+WARN  (EX0211) : The output port "P[15]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[14]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[13]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[12]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[11]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[10]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[9]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[8]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[7]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[6]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[5]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[4]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[3]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[2]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[1]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+WARN  (EX0211) : The output port "P[0]" of module "MultiplierSigned" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":16)
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input RQ is unused("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":14)
+WARN  (CV0016) : Input RM is unused("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":14)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "Propagator" instantiated to "ADD1M" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":84)
+WARN  (NL0002) : The module "Propagator" instantiated to "ADD1P" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":92)
+WARN  (NL0002) : The module "Propagator" instantiated to "ADD1Q" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":77)
+WARN  (NL0002) : The module "VectorMult" instantiated to "VA" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":99)
+WARN  (NL0002) : The module "VectorMult" instantiated to "VB" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":100)
+WARN  (NL0002) : The module "VectorMult" instantiated to "VC" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":101)
+WARN  (NL0002) : The module "VectorMult" instantiated to "VD" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":102)
+WARN  (NL0002) : The module "VectorMult" instantiated to "VE" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":103)
+WARN  (NL0002) : The module "VectorMult" instantiated to "VF" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":104)
+WARN  (NL0002) : The module "VectorMult" instantiated to "VG" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\T_design.vhd":105)
+[95%] Generate netlist file "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\impl\gwsynthesis\pjt.vg" completed
+[100%] Generate report file "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6TwosComplement\DesGenerate-Version\pjt\impl\gwsynthesis\pjt_syn.rpt.html" completed
+GowinSynthesis finish

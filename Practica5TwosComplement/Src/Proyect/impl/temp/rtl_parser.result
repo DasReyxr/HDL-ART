@@ -1,0 +1,172 @@
+[
+ {
+  "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Comp.vhd",
+  "InstLine" : 4,
+  "InstName" : "Comp",
+  "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Comp.vhd",
+  "ModuleLine" : 4,
+  "ModuleName" : "Comp"
+ },
+ {
+  "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+  "InstLine" : 4,
+  "InstName" : "MultiplierSigned",
+  "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+  "ModuleLine" : 4,
+  "ModuleName" : "MultiplierSigned",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 70,
+    "InstName" : "C0",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Comp2.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "Comp2"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 71,
+    "InstName" : "C1",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Comp2.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "Comp2"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 72,
+    "InstName" : "C2",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Comp2.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "Comp2"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 74,
+    "InstName" : "V0",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 75,
+    "InstName" : "V1",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 76,
+    "InstName" : "V2",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 77,
+    "InstName" : "V3",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 78,
+    "InstName" : "V4",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 79,
+    "InstName" : "V5",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 80,
+    "InstName" : "V6",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 81,
+    "InstName" : "V7",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 83,
+    "InstName" : "V8",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 84,
+    "InstName" : "V9",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 85,
+    "InstName" : "V10",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 86,
+    "InstName" : "V11",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 87,
+    "InstName" : "V12",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 88,
+    "InstName" : "V13",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 89,
+    "InstName" : "V14",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   },
+   {
+    "InstFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd",
+    "InstLine" : 90,
+    "InstName" : "V15",
+    "ModuleFile" : "/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "VectorMult"
+   }
+  ]
+ }
+]

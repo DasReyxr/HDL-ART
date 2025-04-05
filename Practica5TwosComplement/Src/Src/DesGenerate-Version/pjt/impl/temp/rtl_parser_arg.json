@@ -1,0 +1,28 @@
+{
+ "Device" : "GW1NZ-1",
+ "Files" : [
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6TwosComplement/DesGenerate-Version/pjt/Adder16Bits.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6TwosComplement/DesGenerate-Version/pjt/T_design.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6TwosComplement/DesGenerate-Version/pjt/Vector.vhd",
+   "Type" : "vhdl"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6TwosComplement/DesGenerate-Version/pjt/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

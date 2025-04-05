@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/ise/AVm/4to/Practica5MultiplierSIgned/XilinxProyect/Multiplier/Multiplier.ncd
-OUTFILE=/home/ise/AVm/4to/Practica5MultiplierSIgned/XilinxProyect/Multiplier/Multiplier.bit
-FAMILY=Spartan6
-PART=xc6slx9-3tqg144
-WORKINGDIR=/home/ise/AVm/4to/Practica5MultiplierSIgned/XilinxProyect/Multiplier
-LICENSE=ISE
-USER_INFO=8416_11442_1478797146_620

@@ -1,0 +1,55 @@
+GowinSynthesis start
+Running parser ...
+Analyzing VHDL file '/home/tostada105/Proyects/Escuela/Gowin/P6/Comp.vhd'
+Analyzing entity 'comp'("/home/tostada105/Proyects/Escuela/Gowin/P6/Comp.vhd":4)
+Analyzing architecture 'bobo'("/home/tostada105/Proyects/Escuela/Gowin/P6/Comp.vhd":11)
+Analyzing VHDL file '/home/tostada105/Proyects/Escuela/Gowin/P6/Comp2.vhd'
+Analyzing entity 'comp2'("/home/tostada105/Proyects/Escuela/Gowin/P6/Comp2.vhd":4)
+Analyzing architecture 'bobo'("/home/tostada105/Proyects/Escuela/Gowin/P6/Comp2.vhd":10)
+Analyzing VHDL file '/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd'
+Analyzing entity 'multipliersigned'("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":4)
+Analyzing architecture 'bobo'("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":13)
+Analyzing VHDL file '/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd'
+Analyzing entity 'vectormult'("/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd":4)
+Analyzing architecture 'juve3dstudio'("/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd":16)
+Processing 'MultiplierSigned(bobo)'("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":4)
+Processing 'Comp2(bobo)'("/home/tostada105/Proyects/Escuela/Gowin/P6/Comp2.vhd":4)
+Processing 'VectorMult(juve3dstudio)'("/home/tostada105/Proyects/Escuela/Gowin/P6/Vector.vhd":4)
+NOTE  (EX0101) : Current top module is "MultiplierSigned"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "Comp2" instantiated to "C0" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":70)
+WARN  (NL0002) : The module "Comp2" instantiated to "C1" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":71)
+WARN  (NL0002) : The module "Comp2" instantiated to "C2" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":72)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V1" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":75)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V10" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":85)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V11" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":86)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V12" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":87)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V13" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":88)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V14" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":89)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V15" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":90)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V2" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":76)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V3" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":77)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V4" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":78)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V5" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":79)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V6" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":80)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V7" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":81)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V8" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":83)
+WARN  (NL0002) : The module "VectorMult" instantiated to "V9" is swept in optimizing("/home/tostada105/Proyects/Escuela/Gowin/P6/T_design.vhd":84)
+[95%] Generate netlist file "/home/tostada105/Proyects/Escuela/Gowin/P6/impl/gwsynthesis/P6.vg" completed
+[100%] Generate report file "/home/tostada105/Proyects/Escuela/Gowin/P6/impl/gwsynthesis/P6_syn.rpt.html" completed
+GowinSynthesis finish
