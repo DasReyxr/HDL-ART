@@ -1,0 +1,12 @@
+-d C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\impl\gwsynthesis\P7.vg
+-p GW1NR-9C-QFN88P-6
+-pn GW1NR-LV9QN88PC6/I5
+-cst C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\P6.cst
+-cfg C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23

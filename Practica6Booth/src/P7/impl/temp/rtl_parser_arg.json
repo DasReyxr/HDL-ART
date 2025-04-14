@@ -1,0 +1,33 @@
+{
+ "Device" : "GW1NR-9C",
+ "Files" : [
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6Booth/src/P7/src/Adder16bits.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6Booth/src/P7/src/Booth.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6Booth/src/P7/src/Carrysave.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6Booth/src/P7/src/Comp2.vhd",
+   "Type" : "vhdl"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/VHDL-ART/Practica6Booth/src/P7/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

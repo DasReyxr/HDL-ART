@@ -1,0 +1,42 @@
+GowinSynthesis start
+Running parser ...
+Analyzing VHDL file 'C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Adder16bits.vhd'
+Analyzing entity 'cla_16bits'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Adder16bits.vhd":10)
+Analyzing architecture 'juve3dstudio'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Adder16bits.vhd":19)
+Analyzing VHDL file 'C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Booth.vhd'
+Analyzing entity 'multiplier'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Booth.vhd":6)
+Analyzing architecture 'juve3dstudio'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Booth.vhd":16)
+Analyzing VHDL file 'C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Carrysave.vhd'
+Analyzing entity 'carrysave'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Carrysave.vhd":6)
+Analyzing architecture 'juve3dstudio'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Carrysave.vhd":13)
+Analyzing VHDL file 'C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Comp2.vhd'
+Analyzing entity 'comp2'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Comp2.vhd":4)
+Analyzing architecture 'bobo'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Comp2.vhd":10)
+Processing 'Multiplier(juve3dstudio)'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Booth.vhd":6)
+Processing 'CarrySave(juve3dstudio)'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Carrysave.vhd":6)
+Processing 'CLA_16Bits(juve3dstudio)'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Adder16bits.vhd":10)
+Processing 'Comp2(bobo)'("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Comp2.vhd":4)
+NOTE  (EX0101) : Current top module is "Multiplier"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "Comp2" instantiated to "Amala" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Booth.vhd":63)
+WARN  (NL0002) : The module "CarrySave" instantiated to "CSA2" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Booth.vhd":50)
+WARN  (NL0002) : The module "CarrySave" instantiated to "CSA31" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Booth.vhd":51)
+WARN  (NL0002) : The module "CarrySave" instantiated to "CSA4" is swept in optimizing("C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\src\Booth.vhd":54)
+[95%] Generate netlist file "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\impl\gwsynthesis\P7.vg" completed
+[100%] Generate report file "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\VHDL-ART\Practica6Booth\src\P7\impl\gwsynthesis\P7_syn.rpt.html" completed
+GowinSynthesis finish
