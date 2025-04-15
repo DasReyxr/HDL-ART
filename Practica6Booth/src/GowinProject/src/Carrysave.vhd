@@ -15,6 +15,6 @@ signal C : std_logic_vector(15 downto 0);  -- Adjusted to 8 downto 0
 begin
     S <= (IN1 xor IN2) xor IN3; 
     C <= (IN1 and IN2) or ( IN1 and IN3) or (IN2 and IN3);
-	 sCarry <= C(14 downto 0) & '0';
+    sCarry <= C(14 downto 0) & '0';
 
 end juve3dstudio;
