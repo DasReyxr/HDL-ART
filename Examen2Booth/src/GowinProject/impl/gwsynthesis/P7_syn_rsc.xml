@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="Multiplier" Lut="2">
+ <SubModule name="CSA1" Lut="1"/>
+ <SubModule name="CSA3" Lut="5"/>
+ <SubModule name="CSA5" Lut="9"/>
+ <SubModule name="CSA6" Lut="13"/>
+ <SubModule name="CLA" Lut="221"/>
+</Module>
