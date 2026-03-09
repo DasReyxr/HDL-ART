@@ -1,0 +1,25 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor_tb_isim_beh.exe -prj /home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor_tb_beh.prj work.Divisor_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/../../FullSub8.vhd" into library work
+Parsing VHDL file "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/../../T_divisorwoarray.vhd" into library work
+Parsing VHDL file "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/../../tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97020 KB
+Fuse CPU Usage: 9030 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity FullSub8 [fullsub8_default]
+Compiling architecture juve3dstudio of entity Divisor8Bits [divisor8bits_default]
+Compiling architecture behavior of entity divisor_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 VHDL Units
+Built simulation executable /home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor_tb_isim_beh.exe
+Fuse Memory Usage: 666704 KB
+Fuse CPU Usage: 10580 ms
+GCC CPU Usage: 3400 ms

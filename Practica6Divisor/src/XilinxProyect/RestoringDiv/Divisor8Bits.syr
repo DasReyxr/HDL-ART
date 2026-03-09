@@ -1,0 +1,188 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> 
+Reading design: Divisor8Bits.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Divisor8Bits.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Divisor8Bits"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : Divisor8Bits
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Only
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ise/HDL-ART/Practica6Divisor/FullSub8.vhd" into library work
+Parsing entity <FullSub8>.
+Parsing architecture <Behavioral> of entity <fullsub8>.
+Parsing VHDL file "/home/ise/HDL-ART/Practica6Divisor/T_divisorwoarray.vhd" into library work
+Parsing entity <Divisor8Bits>.
+Parsing architecture <juve3dstudio> of entity <divisor8bits>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Divisor8Bits> (architecture <juve3dstudio>) from library <work>.
+
+Elaborating entity <FullSub8> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Divisor8Bits>.
+    Related source file is "/home/ise/HDL-ART/Practica6Divisor/T_divisorwoarray.vhd".
+    Found 8-bit comparator lessequal for signal <n0008> created at line 64
+    Found 8-bit comparator lessequal for signal <n0010> created at line 65
+    Found 8-bit comparator lessequal for signal <n0012> created at line 66
+    Found 8-bit comparator lessequal for signal <n0014> created at line 67
+    Found 8-bit comparator lessequal for signal <n0016> created at line 68
+    Found 8-bit comparator lessequal for signal <n0018> created at line 69
+    Found 8-bit comparator lessequal for signal <n0020> created at line 70
+    Found 8-bit comparator lessequal for signal <n0022> created at line 71
+    Summary:
+	inferred   8 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <Divisor8Bits> synthesized.
+
+Synthesizing Unit <FullSub8>.
+    Related source file is "/home/ise/HDL-ART/Practica6Divisor/FullSub8.vhd".
+    Summary:
+Unit <FullSub8> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Comparators                                          : 8
+ 8-bit comparator lessequal                            : 8
+# Multiplexers                                         : 8
+ 8-bit 2-to-1 multiplexer                              : 8
+# Xors                                                 : 129
+ 1-bit xor2                                            : 129
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 9
+#      GND                         : 9
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 30.57 secs
+ 
+--> 
+
+
+Total memory usage is 476656 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

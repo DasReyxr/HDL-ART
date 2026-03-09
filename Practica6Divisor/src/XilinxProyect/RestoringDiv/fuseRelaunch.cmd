@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor_tb_isim_beh.exe" -prj "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor_tb_beh.prj" "work.Divisor_tb" 

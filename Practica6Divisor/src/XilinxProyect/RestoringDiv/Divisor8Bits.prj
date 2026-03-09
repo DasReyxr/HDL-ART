@@ -1,0 +1,2 @@
+vhdl work "../../FullSub8.vhd"
+vhdl work "../../T_divisorwoarray.vhd"

@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor8Bits.xst" -ofn "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor8Bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Divisor8Bits.ngc Divisor8Bits.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Divisor8Bits_map.ncd Divisor8Bits.ngd Divisor8Bits.pcf 
+par -w -intstyle ise -ol high -mt off Divisor8Bits_map.ncd Divisor8Bits.ncd Divisor8Bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Divisor8Bits.twx Divisor8Bits.ncd -o Divisor8Bits.twr Divisor8Bits.pcf 
+xst -intstyle ise -ifn "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor8Bits.xst" -ofn "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor8Bits.syr" 
+xst -intstyle ise -ifn "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor8Bits.xst" -ofn "/home/ise/HDL-ART/Practica6Divisor/XilinxProyect/RestoringDiv/Divisor8Bits.syr" 

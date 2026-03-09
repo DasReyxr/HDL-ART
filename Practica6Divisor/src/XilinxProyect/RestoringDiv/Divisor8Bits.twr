@@ -1,0 +1,282 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml Divisor8Bits.twx Divisor8Bits.ncd -o Divisor8Bits.twr
+Divisor8Bits.pcf
+
+Design file:              Divisor8Bits.ncd
+Physical constraint file: Divisor8Bits.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ED<0>          |Quot<0>        |   31.226|
+ED<0>          |Quot<1>        |   26.582|
+ED<0>          |Quot<2>        |   22.105|
+ED<0>          |Quot<3>        |   18.248|
+ED<0>          |Quot<4>        |   14.622|
+ED<0>          |Quot<5>        |   11.136|
+ED<0>          |Quot<6>        |   10.396|
+ED<0>          |Quot<7>        |   10.147|
+ED<0>          |gbg<0>         |   31.936|
+ED<0>          |gbg<1>         |   32.160|
+ED<0>          |gbg<2>         |   32.221|
+ED<0>          |gbg<3>         |   31.868|
+ED<0>          |gbg<4>         |   31.758|
+ED<0>          |gbg<5>         |   31.945|
+ED<0>          |gbg<6>         |   31.847|
+ED<0>          |gbg<7>         |   31.865|
+ED<1>          |Quot<0>        |   31.381|
+ED<1>          |Quot<1>        |   26.737|
+ED<1>          |Quot<2>        |   22.260|
+ED<1>          |Quot<3>        |   18.403|
+ED<1>          |Quot<4>        |   14.777|
+ED<1>          |Quot<5>        |   11.186|
+ED<1>          |Quot<6>        |   10.666|
+ED<1>          |Quot<7>        |   10.396|
+ED<1>          |gbg<0>         |   32.091|
+ED<1>          |gbg<1>         |   32.315|
+ED<1>          |gbg<2>         |   32.376|
+ED<1>          |gbg<3>         |   32.023|
+ED<1>          |gbg<4>         |   31.913|
+ED<1>          |gbg<5>         |   32.100|
+ED<1>          |gbg<6>         |   32.002|
+ED<1>          |gbg<7>         |   32.020|
+ED<2>          |Quot<0>        |   31.365|
+ED<2>          |Quot<1>        |   26.721|
+ED<2>          |Quot<2>        |   22.244|
+ED<2>          |Quot<3>        |   18.387|
+ED<2>          |Quot<4>        |   14.761|
+ED<2>          |Quot<5>        |   11.112|
+ED<2>          |Quot<6>        |   10.001|
+ED<2>          |Quot<7>        |   10.121|
+ED<2>          |gbg<0>         |   32.075|
+ED<2>          |gbg<1>         |   32.299|
+ED<2>          |gbg<2>         |   32.360|
+ED<2>          |gbg<3>         |   32.007|
+ED<2>          |gbg<4>         |   31.897|
+ED<2>          |gbg<5>         |   32.084|
+ED<2>          |gbg<6>         |   31.986|
+ED<2>          |gbg<7>         |   32.004|
+ED<3>          |Quot<0>        |   32.198|
+ED<3>          |Quot<1>        |   27.554|
+ED<3>          |Quot<2>        |   23.077|
+ED<3>          |Quot<3>        |   19.220|
+ED<3>          |Quot<4>        |   15.594|
+ED<3>          |Quot<5>        |   11.276|
+ED<3>          |Quot<6>        |   11.466|
+ED<3>          |Quot<7>        |   11.141|
+ED<3>          |gbg<0>         |   32.908|
+ED<3>          |gbg<1>         |   33.132|
+ED<3>          |gbg<2>         |   33.193|
+ED<3>          |gbg<3>         |   32.840|
+ED<3>          |gbg<4>         |   32.730|
+ED<3>          |gbg<5>         |   32.917|
+ED<3>          |gbg<6>         |   32.819|
+ED<3>          |gbg<7>         |   32.837|
+ED<4>          |Quot<0>        |   32.494|
+ED<4>          |Quot<1>        |   27.850|
+ED<4>          |Quot<2>        |   23.373|
+ED<4>          |Quot<3>        |   19.516|
+ED<4>          |Quot<4>        |   15.890|
+ED<4>          |Quot<5>        |   11.026|
+ED<4>          |Quot<6>        |   11.762|
+ED<4>          |Quot<7>        |   11.437|
+ED<4>          |gbg<0>         |   33.204|
+ED<4>          |gbg<1>         |   33.428|
+ED<4>          |gbg<2>         |   33.489|
+ED<4>          |gbg<3>         |   33.136|
+ED<4>          |gbg<4>         |   33.026|
+ED<4>          |gbg<5>         |   33.213|
+ED<4>          |gbg<6>         |   33.115|
+ED<4>          |gbg<7>         |   33.133|
+ED<5>          |Quot<0>        |   32.020|
+ED<5>          |Quot<1>        |   27.376|
+ED<5>          |Quot<2>        |   22.899|
+ED<5>          |Quot<3>        |   19.042|
+ED<5>          |Quot<4>        |   15.416|
+ED<5>          |Quot<5>        |   10.868|
+ED<5>          |Quot<6>        |   11.288|
+ED<5>          |Quot<7>        |   10.963|
+ED<5>          |gbg<0>         |   32.730|
+ED<5>          |gbg<1>         |   32.954|
+ED<5>          |gbg<2>         |   33.015|
+ED<5>          |gbg<3>         |   32.662|
+ED<5>          |gbg<4>         |   32.552|
+ED<5>          |gbg<5>         |   32.739|
+ED<5>          |gbg<6>         |   32.641|
+ED<5>          |gbg<7>         |   32.659|
+ED<6>          |Quot<0>        |   31.912|
+ED<6>          |Quot<1>        |   27.268|
+ED<6>          |Quot<2>        |   22.791|
+ED<6>          |Quot<3>        |   18.934|
+ED<6>          |Quot<4>        |   15.308|
+ED<6>          |Quot<5>        |   10.973|
+ED<6>          |Quot<6>        |   11.180|
+ED<6>          |Quot<7>        |   10.855|
+ED<6>          |gbg<0>         |   32.622|
+ED<6>          |gbg<1>         |   32.846|
+ED<6>          |gbg<2>         |   32.907|
+ED<6>          |gbg<3>         |   32.554|
+ED<6>          |gbg<4>         |   32.444|
+ED<6>          |gbg<5>         |   32.631|
+ED<6>          |gbg<6>         |   32.533|
+ED<6>          |gbg<7>         |   32.551|
+ED<7>          |Quot<0>        |   32.299|
+ED<7>          |Quot<1>        |   27.655|
+ED<7>          |Quot<2>        |   23.178|
+ED<7>          |Quot<3>        |   19.321|
+ED<7>          |Quot<4>        |   15.695|
+ED<7>          |Quot<5>        |   10.929|
+ED<7>          |Quot<6>        |   11.567|
+ED<7>          |Quot<7>        |   11.242|
+ED<7>          |gbg<0>         |   33.009|
+ED<7>          |gbg<1>         |   33.233|
+ED<7>          |gbg<2>         |   33.294|
+ED<7>          |gbg<3>         |   32.941|
+ED<7>          |gbg<4>         |   32.831|
+ED<7>          |gbg<5>         |   33.018|
+ED<7>          |gbg<6>         |   32.920|
+ED<7>          |gbg<7>         |   32.938|
+N<0>           |Quot<0>        |   14.347|
+N<0>           |gbg<0>         |   15.057|
+N<0>           |gbg<1>         |   15.281|
+N<0>           |gbg<2>         |   15.342|
+N<0>           |gbg<3>         |   14.989|
+N<0>           |gbg<4>         |   14.879|
+N<0>           |gbg<5>         |   15.066|
+N<0>           |gbg<6>         |   14.968|
+N<0>           |gbg<7>         |   14.986|
+N<1>           |Quot<0>        |   18.877|
+N<1>           |Quot<1>        |   14.233|
+N<1>           |gbg<0>         |   19.587|
+N<1>           |gbg<1>         |   19.811|
+N<1>           |gbg<2>         |   19.872|
+N<1>           |gbg<3>         |   19.519|
+N<1>           |gbg<4>         |   19.409|
+N<1>           |gbg<5>         |   19.596|
+N<1>           |gbg<6>         |   19.498|
+N<1>           |gbg<7>         |   19.516|
+N<2>           |Quot<0>        |   21.367|
+N<2>           |Quot<1>        |   16.723|
+N<2>           |Quot<2>        |   12.246|
+N<2>           |gbg<0>         |   22.077|
+N<2>           |gbg<1>         |   22.301|
+N<2>           |gbg<2>         |   22.362|
+N<2>           |gbg<3>         |   22.009|
+N<2>           |gbg<4>         |   21.899|
+N<2>           |gbg<5>         |   22.086|
+N<2>           |gbg<6>         |   21.988|
+N<2>           |gbg<7>         |   22.006|
+N<3>           |Quot<0>        |   26.601|
+N<3>           |Quot<1>        |   21.957|
+N<3>           |Quot<2>        |   17.480|
+N<3>           |Quot<3>        |   13.623|
+N<3>           |gbg<0>         |   27.311|
+N<3>           |gbg<1>         |   27.535|
+N<3>           |gbg<2>         |   27.596|
+N<3>           |gbg<3>         |   27.243|
+N<3>           |gbg<4>         |   27.133|
+N<3>           |gbg<5>         |   27.320|
+N<3>           |gbg<6>         |   27.222|
+N<3>           |gbg<7>         |   27.240|
+N<4>           |Quot<0>        |   28.458|
+N<4>           |Quot<1>        |   23.814|
+N<4>           |Quot<2>        |   19.337|
+N<4>           |Quot<3>        |   15.480|
+N<4>           |Quot<4>        |   11.854|
+N<4>           |gbg<0>         |   29.168|
+N<4>           |gbg<1>         |   29.392|
+N<4>           |gbg<2>         |   29.453|
+N<4>           |gbg<3>         |   29.100|
+N<4>           |gbg<4>         |   28.990|
+N<4>           |gbg<5>         |   29.177|
+N<4>           |gbg<6>         |   29.079|
+N<4>           |gbg<7>         |   29.097|
+N<5>           |Quot<0>        |   31.352|
+N<5>           |Quot<1>        |   26.708|
+N<5>           |Quot<2>        |   22.231|
+N<5>           |Quot<3>        |   18.374|
+N<5>           |Quot<4>        |   14.748|
+N<5>           |Quot<5>        |   10.944|
+N<5>           |gbg<0>         |   32.062|
+N<5>           |gbg<1>         |   32.286|
+N<5>           |gbg<2>         |   32.347|
+N<5>           |gbg<3>         |   31.994|
+N<5>           |gbg<4>         |   31.884|
+N<5>           |gbg<5>         |   32.071|
+N<5>           |gbg<6>         |   31.973|
+N<5>           |gbg<7>         |   31.991|
+N<6>           |Quot<0>        |   30.079|
+N<6>           |Quot<1>        |   25.435|
+N<6>           |Quot<2>        |   20.958|
+N<6>           |Quot<3>        |   17.101|
+N<6>           |Quot<4>        |   13.475|
+N<6>           |Quot<5>        |    9.772|
+N<6>           |Quot<6>        |    8.620|
+N<6>           |gbg<0>         |   30.789|
+N<6>           |gbg<1>         |   31.013|
+N<6>           |gbg<2>         |   31.074|
+N<6>           |gbg<3>         |   30.721|
+N<6>           |gbg<4>         |   30.611|
+N<6>           |gbg<5>         |   30.798|
+N<6>           |gbg<6>         |   30.700|
+N<6>           |gbg<7>         |   30.718|
+N<7>           |Quot<0>        |   30.170|
+N<7>           |Quot<1>        |   25.526|
+N<7>           |Quot<2>        |   21.049|
+N<7>           |Quot<3>        |   17.192|
+N<7>           |Quot<4>        |   13.566|
+N<7>           |Quot<5>        |   10.080|
+N<7>           |Quot<6>        |    8.978|
+N<7>           |Quot<7>        |    8.903|
+N<7>           |gbg<0>         |   30.880|
+N<7>           |gbg<1>         |   31.104|
+N<7>           |gbg<2>         |   31.165|
+N<7>           |gbg<3>         |   30.812|
+N<7>           |gbg<4>         |   30.702|
+N<7>           |gbg<5>         |   30.889|
+N<7>           |gbg<6>         |   30.791|
+N<7>           |gbg<7>         |   30.809|
+SD             |Sq             |   11.150|
+SN             |Sq             |   10.498|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Feb 18 07:49:41 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 382 MB
+
+
+

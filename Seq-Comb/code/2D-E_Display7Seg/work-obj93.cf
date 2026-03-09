@@ -1,0 +1,4 @@
+v 4
+file . "2EDisplay7Seg.vhd" "743f6c79156134bbe789ccd9a2b4b17cc27e5c2c" "20250528172847.621":
+  entity display7 at 7( 177) + 0 on 4;
+  architecture juve3dstudio of display7 at 19( 408) + 0 on 4;
