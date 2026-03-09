@@ -1,0 +1,2 @@
+work	"../RNG/src/LCD.vhd"
+work	"../RNG/src/rng.vhd"

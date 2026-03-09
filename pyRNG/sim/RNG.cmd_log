@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/HDL-ART/pyRNG/sim/RNG.xst" -ofn "/home/ise/HDL-ART/pyRNG/sim/RNG.syr" 

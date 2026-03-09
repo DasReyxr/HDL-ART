@@ -1,0 +1,10 @@
+Command line:
+   TB_RNG_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  44262
+
+Tue Feb 18 08:11:39 2025
+
+
+ Elaboration Time: 0.26 sec

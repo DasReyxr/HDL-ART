@@ -1,0 +1,670 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> 
+Reading design: RNG.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RNG.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RNG"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : RNG
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ise/HDL-ART/pyRNG/RNG/src/LCD.vhd" into library work
+Parsing entity <LCD>.
+Parsing architecture <FSM_Concurrent> of entity <lcd>.
+Parsing VHDL file "/home/ise/HDL-ART/pyRNG/RNG/src/rng.vhd" into library work
+Parsing entity <RNG>.
+Parsing architecture <juve3dstudio> of entity <rng>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <RNG> (architecture <juve3dstudio>) from library <work>.
+
+Elaborating entity <LCD> (architecture <FSM_Concurrent>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <RNG>.
+    Related source file is "/home/ise/HDL-ART/pyRNG/RNG/src/rng.vhd".
+    Found 8-bit register for signal <reg_s<7:0>>.
+    Found 9-bit register for signal <reg_a>.
+    Found 9-bit register for signal <count_s>.
+    Found 9-bit adder for signal <count_s[8]_GND_4_o_add_2_OUT> created at line 1241.
+WARNING:Xst:737 - Found 1-bit latch for signal <card<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <card<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <card<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <card<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <card<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <card<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <card<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 9-bit comparator greater for signal <count_s[8]_GND_4_o_LessThan_2_o> created at line 38
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   7 Latch(s).
+	inferred   1 Comparator(s).
+	inferred  51 Multiplexer(s).
+Unit <RNG> synthesized.
+
+Synthesizing Unit <LCD>.
+    Related source file is "/home/ise/HDL-ART/pyRNG/RNG/src/LCD.vhd".
+    Found 5-bit register for signal <next_clkCount>.
+    Found 1-bit register for signal <next_oneUSClk>.
+    Found 21-bit register for signal <count>.
+    Found 5-bit register for signal <lcd_cmd_ptr>.
+    Found 8-bit register for signal <DATAclocked>.
+    Found 4-bit register for signal <stCur>.
+    Found finite state machine <FSM_0> for signal <stNext[3]_dff_0>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 29                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 13                                             |
+    | Clock              | oneUSClk (rising_edge)                         |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit adder for signal <next_clkCount[4]_GND_13_o_add_3_OUT> created at line 1241.
+    Found 21-bit adder for signal <count[20]_GND_13_o_add_45_OUT> created at line 1241.
+    Found 6-bit adder for signal <n0102> created at line 105.
+    Found 4x9-bit Read Only RAM for signal <n0100>
+WARNING:Xst:737 - Found 1-bit latch for signal <oneUSClk>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 5-bit comparator greater for signal <lcd_cmd_ptr[4]_GND_13_o_LessThan_60_o> created at line 118
+    WARNING:Xst:2404 -  FFs/Latches <RSclocked<0:0>> (without init value) have a constant value of 1 in block <LCD>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <LCD> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x9-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 4
+ 21-bit adder                                          : 1
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 8
+ 1-bit register                                        : 1
+ 21-bit register                                       : 1
+ 5-bit register                                        : 2
+ 8-bit register                                        : 2
+ 9-bit register                                        : 2
+# Latches                                              : 8
+ 1-bit latch                                           : 8
+# Comparators                                          : 2
+ 5-bit comparator greater                              : 1
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 54
+ 1-bit 2-to-1 multiplexer                              : 51
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+# Xors                                                 : 2
+ 11-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <DATA[7]_dff_56_7> has a constant value of 0 in block <LCD_inst>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <LCD>.
+The following registers are absorbed into counter <clkCount[4]_dff_1>: 1 register on signal <clkCount[4]_dff_1>.
+The following registers are absorbed into counter <next_count[20]_dff_47>: 1 register on signal <next_count[20]_dff_47>.
+The following registers are absorbed into counter <next_lcd_cmd_ptr[4]_dff_55>: 1 register on signal <next_lcd_cmd_ptr[4]_dff_55>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_n0100> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 9-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <lcd_cmd_ptr<1:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <LCD> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RNG>.
+The following registers are absorbed into counter <count_a[8]_dff_0>: 1 register on signal <count_a[8]_dff_0>.
+Unit <RNG> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x9-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 2
+ 5-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 4
+ 21-bit up counter                                     : 1
+ 5-bit up counter                                      : 2
+ 9-bit up counter                                      : 1
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+# Comparators                                          : 2
+ 5-bit comparator greater                              : 1
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 54
+ 1-bit 2-to-1 multiplexer                              : 51
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+# Xors                                                 : 2
+ 11-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <DATA[7]_dff_56_7> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <LCD_inst/FSM_0> on signal <stNext[3]_dff_0[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 0011  | 0011
+-------------------
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    card_0 in unit <RNG>
+    card_1 in unit <RNG>
+    card_2 in unit <RNG>
+    card_3 in unit <RNG>
+    card_4 in unit <RNG>
+    card_5 in unit <RNG>
+    card_6 in unit <RNG>
+
+
+Optimizing unit <RNG> ...
+WARNING:Xst:1293 - FF/Latch <count_a[8]_dff_5_8> has a constant value of 0 in block <RNG>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <LCD> ...
+WARNING:Xst:1293 - FF/Latch <count_a[8]_dff_0_8> has a constant value of 0 in block <RNG>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RNG, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 67
+ Flip-Flops                                            : 67
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : RNG.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 196
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 20
+#      LUT2                        : 28
+#      LUT3                        : 13
+#      LUT4                        : 12
+#      LUT5                        : 22
+#      LUT6                        : 39
+#      MUXCY                       : 27
+#      VCC                         : 1
+#      XORCY                       : 29
+# FlipFlops/Latches                : 75
+#      FD                          : 62
+#      FDRE                        : 5
+#      LD                          : 8
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGP                       : 2
+# IO Buffers                       : 10
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              75  out of  11440     0%  
+ Number of Slice LUTs:                  138  out of   5720     2%  
+    Number used as Logic:               138  out of   5720     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    149
+   Number with an unused Flip Flop:      74  out of    149    49%  
+   Number with an unused LUT:            11  out of    149     7%  
+   Number of fully used LUT-FF pairs:    64  out of    149    42%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    102    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------------------+---------------------------+-------+
+Clock Signal                                                                        | Clock buffer(FF name)     | Load  |
+------------------------------------------------------------------------------------+---------------------------+-------+
+sw                                                                                  | BUFGP                     | 8     |
+clk                                                                                 | BUFGP                     | 22    |
+LCD_inst/oneUSClk                                                                   | BUFG                      | 37    |
+LCD_inst/PWR_5_o_clkCount[4]_equal_6_o(LCD_inst/PWR_5_o_clkCount[4]_equal_6_o<4>1:O)| NONE(*)(LCD_inst/oneUSClk)| 1     |
+card_6_G(card_6_G:O)                                                                | NONE(*)(card_6)           | 1     |
+card_5_G(card_5_G:O)                                                                | NONE(*)(card_5)           | 1     |
+card_4_G(card_4_G:O)                                                                | NONE(*)(card_4)           | 1     |
+card_3_G(card_3_G:O)                                                                | NONE(*)(card_3)           | 1     |
+card_2_G(card_2_G:O)                                                                | NONE(*)(card_2)           | 1     |
+card_1_G(card_1_G:O)                                                                | NONE(*)(card_1)           | 1     |
+card_0_G(card_0_G:O)                                                                | NONE(*)(card_0)           | 1     |
+------------------------------------------------------------------------------------+---------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.802ns (Maximum Frequency: 208.266MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.001ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.782ns (frequency: 264.431MHz)
+  Total number of paths / destination ports: 405 / 13
+-------------------------------------------------------------------------
+Delay:               3.782ns (Levels of Logic = 10)
+  Source:            count_a[8]_dff_0_0 (FF)
+  Destination:       count_a[8]_dff_0_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: count_a[8]_dff_0_0 to count_a[8]_dff_0_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.447   1.050  count_a[8]_dff_0_0 (count_a[8]_dff_0_0)
+     LUT5:I1->O           11   0.203   0.883  Mmux_count_a611 (Mmux_count_a61)
+     LUT4:I3->O            1   0.205   0.579  count_s[8]_GND_4_o_LessThan_2_o_inv_inv11 (count_s[8]_GND_4_o_LessThan_2_o_inv_inv)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_a[8]_dff_0_cy<0> (Mcount_count_a[8]_dff_0_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_a[8]_dff_0_cy<1> (Mcount_count_a[8]_dff_0_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_a[8]_dff_0_cy<2> (Mcount_count_a[8]_dff_0_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_a[8]_dff_0_cy<3> (Mcount_count_a[8]_dff_0_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_a[8]_dff_0_cy<4> (Mcount_count_a[8]_dff_0_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_a[8]_dff_0_cy<5> (Mcount_count_a[8]_dff_0_cy<5>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_count_a[8]_dff_0_cy<6> (Mcount_count_a[8]_dff_0_cy<6>)
+     XORCY:CI->O           1   0.180   0.000  Mcount_count_a[8]_dff_0_xor<7> (Mcount_count_a[8]_dff_07)
+     FD:D                      0.102          count_a[8]_dff_0_7
+    ----------------------------------------
+    Total                      3.782ns (1.270ns logic, 2.512ns route)
+                                       (33.6% logic, 66.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'LCD_inst/oneUSClk'
+  Clock period: 4.802ns (frequency: 208.266MHz)
+  Total number of paths / destination ports: 1695 / 40
+-------------------------------------------------------------------------
+Delay:               4.802ns (Levels of Logic = 4)
+  Source:            LCD_inst/next_count[20]_dff_47_9 (FF)
+  Destination:       LCD_inst/stNext[3]_dff_0_FSM_FFd1 (FF)
+  Source Clock:      LCD_inst/oneUSClk rising
+  Destination Clock: LCD_inst/oneUSClk rising
+
+  Data Path: LCD_inst/next_count[20]_dff_47_9 to LCD_inst/stNext[3]_dff_0_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.447   1.059  LCD_inst/next_count[20]_dff_47_9 (LCD_inst/next_count[20]_dff_47_9)
+     LUT6:I1->O            1   0.203   0.580  LCD_inst/delayOK11 (LCD_inst/delayOK11)
+     LUT2:I1->O            2   0.205   0.864  LCD_inst/delayOK12 (LCD_inst/delayOK12)
+     LUT6:I2->O           13   0.203   0.933  LCD_inst/delayOK13 (LCD_inst/delayOK)
+     LUT5:I4->O            1   0.205   0.000  LCD_inst/stNext[3]_dff_0_FSM_FFd3-In1 (LCD_inst/stNext[3]_dff_0_FSM_FFd3-In)
+     FD:D                      0.102          LCD_inst/stNext[3]_dff_0_FSM_FFd3
+    ----------------------------------------
+    Total                      4.802ns (1.365ns logic, 3.437ns route)
+                                       (28.4% logic, 71.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LCD_inst/oneUSClk'
+  Total number of paths / destination ports: 45 / 9
+-------------------------------------------------------------------------
+Offset:              5.001ns (Levels of Logic = 2)
+  Source:            LCD_inst/next_lcd_cmd_ptr[4]_dff_55_4 (FF)
+  Destination:       LCD_D<5> (PAD)
+  Source Clock:      LCD_inst/oneUSClk rising
+
+  Data Path: LCD_inst/next_lcd_cmd_ptr[4]_dff_55_4 to LCD_D<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.447   1.201  LCD_inst/next_lcd_cmd_ptr[4]_dff_55_4 (LCD_inst/next_lcd_cmd_ptr[4]_dff_55_4)
+     LUT6:I1->O            1   0.203   0.579  LCD_inst/Mmux_DOUT51 (LCD_D_4_OBUF)
+     OBUF:I->O                 2.571          LCD_D_4_OBUF (LCD_D<4>)
+    ----------------------------------------
+    Total                      5.001ns (3.221ns logic, 1.780ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock LCD_inst/PWR_5_o_clkCount[4]_equal_6_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.848|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock LCD_inst/oneUSClk
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+LCD_inst/oneUSClk|    4.802|         |         |         |
+card_0_G         |         |    1.179|         |         |
+card_1_G         |         |    1.179|         |         |
+card_2_G         |         |    1.179|         |         |
+card_3_G         |         |    1.179|         |         |
+card_4_G         |         |    1.179|         |         |
+card_5_G         |         |    1.179|         |         |
+card_6_G         |         |    1.179|         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock card_0_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.367|         |
+sw             |         |         |    4.757|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock card_1_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.367|         |
+sw             |         |         |    4.404|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock card_2_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.484|         |
+sw             |         |         |    4.521|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock card_3_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    7.484|         |
+sw             |         |         |    5.521|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock card_4_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.560|         |
+sw             |         |         |    4.661|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock card_5_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.560|         |
+sw             |         |         |    4.641|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock card_6_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.560|         |
+sw             |         |         |    4.596|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+LCD_inst/PWR_5_o_clkCount[4]_equal_6_o|         |    1.179|         |         |
+clk                                   |    3.782|         |         |         |
+sw                                    |    1.378|         |         |         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sw
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.992|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 36.00 secs
+Total CPU time to Xst completion: 35.36 secs
+ 
+--> 
+
+
+Total memory usage is 485152 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,3 @@
+vhdl work "../RNG/src/LCD.vhd"
+vhdl work "../RNG/src/rng.vhd"
+vhdl work "tb.vhd"

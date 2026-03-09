@@ -1,0 +1,14 @@
+-d C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\impl\gwsynthesis\RNG.vg
+-p GW1NR-9C-QFN88P-6
+-pn GW1NR-LV9QN88PC6/I5
+-cst C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\src\RNG.cst
+-cfg C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\impl\pnr\device.cfg
+-gao_crc 0110010100001001
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23
+-rtl_gao

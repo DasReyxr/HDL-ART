@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/HDL-ART/pyRNG/sim/TB_RNG_isim_beh.exe" -prj "/home/ise/HDL-ART/pyRNG/sim/TB_RNG_beh.prj" "work.TB_RNG" 
