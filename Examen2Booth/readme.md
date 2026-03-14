@@ -1,6 +1,5 @@
 # Examen2Booth - Documentacion de src
 
-![MainArc](doc/MainArc.png)
 
 ## Descripcion general
 
@@ -37,10 +36,11 @@ src/
 ```
 
 ## Modulos RTL
+![MainArc](doc/MainArc.png)
 
 ### 1) `Multiplier` (`0T_Booth.vhd`)
 
-Top-level del diseno.
+Top-level del diseño.
 
 Funciones principales:
 
