@@ -27,7 +27,7 @@ begin
 	siguiente <= actual + '1' when actual <= "100010100100" else "000000000000";
 	-- Logica de Salida --
 	
-	BuzzerOUT<= '0' when actual <= "10001010010"  and Enable='0' else '1'; 
+	BuzzerOUT<= '0' when actual <= "100010100100"  and Enable='0' else '1'; 
 
 	
 	

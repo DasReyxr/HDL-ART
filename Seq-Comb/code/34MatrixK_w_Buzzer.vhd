@@ -30,18 +30,18 @@ architecture juve3dstudio of GuzzerMatrix is
     signal SequencerBus      : std_logic_vector(3 downto 0) := "0000";
 	----- Musical Variables -----
     -- half
-        signal DoMicha :STD_LOGIC_VECTOR(16 downto 0) := "10111010101000100"; -- 191111
-        signal DoSosMicha :STD_LOGIC_VECTOR(16 downto 0) := "10110000001010011"; -- 180390
-        signal ReMicha :STD_LOGIC_VECTOR(16 downto 0) := "10100110010001101"; -- 170266
-        signal ReSosMicha :STD_LOGIC_VECTOR(16 downto 0) := "10011100111100001"; -- 160706
-        signal MiMicha :STD_LOGIC_VECTOR(16 downto 0) := "10010100001000100"; -- 151687
-        signal FaMicha :STD_LOGIC_VECTOR(16 downto 0) := "10001011110100011"; -- 143174
-        signal FaSosMicha :STD_LOGIC_VECTOR(16 downto 0) := "10000011111110010"; -- 135140
-        signal SolMicha :STD_LOGIC_VECTOR(16 downto 0) := "01111100100100001"; -- 127553
-        signal SolSosMicha :STD_LOGIC_VECTOR(16 downto 0) := "01110101100100110"; -- 120396
-        signal LaMicha :STD_LOGIC_VECTOR(16 downto 0) := "01101110111110011"; -- 113638
-        signal LaSosMicha :STD_LOGIC_VECTOR(16 downto 0) := "01101000101111111"; -- 107261
-        signal SiMicha :STD_LOGIC_VECTOR(16 downto 0) := "01100010110111101"; -- 101241
+    signal DoMicha :STD_LOGIC_VECTOR(16 downto 0) := "10111010101000100"; -- 191111
+    signal DoSosMicha :STD_LOGIC_VECTOR(16 downto 0) := "10110000001010011"; -- 180390
+    signal ReMicha :STD_LOGIC_VECTOR(16 downto 0) := "10100110010001101"; -- 170266
+    signal ReSosMicha :STD_LOGIC_VECTOR(16 downto 0) := "10011100111100001"; -- 160706
+    signal MiMicha :STD_LOGIC_VECTOR(16 downto 0) := "10010100001000100"; -- 151687
+    signal FaMicha :STD_LOGIC_VECTOR(16 downto 0) := "10001011110100011"; -- 143174
+    signal FaSosMicha :STD_LOGIC_VECTOR(16 downto 0) := "10000011111110010"; -- 135140
+    signal SolMicha :STD_LOGIC_VECTOR(16 downto 0) := "01111100100100001"; -- 127553
+    signal SolSosMicha :STD_LOGIC_VECTOR(16 downto 0) := "01110101100100110"; -- 120396
+    signal LaMicha :STD_LOGIC_VECTOR(16 downto 0) := "01101110111110011"; -- 113638
+    signal LaSosMicha :STD_LOGIC_VECTOR(16 downto 0) := "01101000101111111"; -- 107261
+    signal SiMicha :STD_LOGIC_VECTOR(16 downto 0) := "01100010110111101"; -- 101241
     
 begin
 	Count2 <= Count2 + '1' when CLK'event and CLK = '1' and ColumnBus = "0000";
@@ -54,7 +54,8 @@ begin
                 "ZZZZ" when others;
 
     
-    SequencerBus <= "0000" when Count2 = "00" and ColumnBus = "0000" else  -- 0
+    SequencerBus <= 
+            "0000" when Count2 = "00" and ColumnBus = "0000" else  -- 0
             "0001" when Count2 = "00" and ColumnBus = "0001" else  -- 1 
             "0010" when Count2 = "00" and ColumnBus = "0010" else  -- 2
             "0011" when Count2 = "00" and ColumnBus = "0100" else  -- 3
