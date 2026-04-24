@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1NZ-1" package="QFN48" speed="6" partNumber="GW1NZ-LV1QN48C6/I5"/>
+    <FileList>
+        <File path="C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/ipcore/CORDIC/data/cordic.v" type="verilog"/>
+        <File path="C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/ipcore/CORDIC/data/cordic_wrap.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="1"/>
+        <Option type="include_path" value="C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/ipcore/CORDIC/data"/>
+        <Option type="include_path" value="C:/Users/dasre/Documents/Knowledge-db/ghFiles/HDL-ART/0Jpcodes/9IP Cors/IP Tst/src/cordic/temp/Cordic"/>
+        <Option type="output_file" value="cordic.vg"/>
+        <Option type="output_template" value="cordic_tmp.v"/>
+        <Option type="ram_balance" value="1"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="vcc" value="1.2"/>
+        <Option type="vccx" value="3.3"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+    </OptionList>
+</Project>

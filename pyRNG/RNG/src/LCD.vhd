@@ -132,7 +132,7 @@ tenMsClk <= not tenMsClk when tenMsCount = std_logic_vector(to_unsigned(269999, 
 
 
     ControlS(5) <= '0' when lcd_cmd_ptr < 3 or(dlr= '1' and lcd_cmd_ptr2 = '0')  else
-          7   RSclocked; 
+            RSclocked; 
     DOUT    <= x"C0" when dlr= '1' and lcd_cmd_ptr2 = '0' else 
              LCD_CMDS(lcd_cmd_ptr)(7 downto 0) when lcd_cmd_ptr < 3 else
              DATAclocked; -- Use DATA input for commands beyond the initial configuration

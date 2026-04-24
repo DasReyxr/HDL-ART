@@ -1,12 +1,19 @@
-Reading netlist file: "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\impl\gwsynthesis\RNG.vg"
-Parsing netlist file "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\impl\gwsynthesis\RNG.vg" completed
+Reading netlist file: "C:\Users\dasre\Documents\Knowledge-db\ghFiles\HDL-ART\pyRNG\RNG\impl\gwsynthesis\RNG.vg"
+Parsing netlist file "C:\Users\dasre\Documents\Knowledge-db\ghFiles\HDL-ART\pyRNG\RNG\impl\gwsynthesis\RNG.vg" completed
 Processing netlist completed
-Reading constraint file: "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\src\RNG.cst"
+Reading constraint file: "C:\Users\dasre\Documents\Knowledge-db\ghFiles\HDL-ART\pyRNG\RNG\src\RNG.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
+WARN  (TA1132) :  'clk' was determined to be a clock but was not created.
+WARN  (TA1132) :  'sw' was determined to be a clock but was not created.
+WARN  (TA1132) :  'tck_pad_i' was determined to be a clock but was not created.
+WARN  (TA1132) :  'n15_6' was determined to be a clock but was not created.
+WARN  (TA1132) :  'LCD_inst_11_2' was determined to be a clock but was not created.
+WARN  (TA1132) :  'LCD_inst/oneUSClk' was determined to be a clock but was not created.
+WARN  (TA1132) :  'LCD_inst/n33_3' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -21,10 +28,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\impl\pnr\RNG.power.html" completed
-Generate file "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\impl\pnr\RNG.pin.html" completed
-Generate file "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\impl\pnr\RNG.rpt.html" completed
-Generate file "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\impl\pnr\RNG.rpt.txt" completed
-Generate file "C:\Users\Das\Dropbox\Obsidian\Fisica\tmp\HDL-ART\pyRNG\RNG\impl\pnr\RNG.tr.html" completed
-Fri Jun 20 10:11:21 2025
+Generate file "C:\Users\dasre\Documents\Knowledge-db\ghFiles\HDL-ART\pyRNG\RNG\impl\pnr\RNG.power.html" completed
+Generate file "C:\Users\dasre\Documents\Knowledge-db\ghFiles\HDL-ART\pyRNG\RNG\impl\pnr\RNG.pin.html" completed
+Generate file "C:\Users\dasre\Documents\Knowledge-db\ghFiles\HDL-ART\pyRNG\RNG\impl\pnr\RNG.rpt.html" completed
+Generate file "C:\Users\dasre\Documents\Knowledge-db\ghFiles\HDL-ART\pyRNG\RNG\impl\pnr\RNG.rpt.txt" completed
+Generate file "C:\Users\dasre\Documents\Knowledge-db\ghFiles\HDL-ART\pyRNG\RNG\impl\pnr\RNG.tr.html" completed
+Tue Apr 14 16:24:21 2026
 

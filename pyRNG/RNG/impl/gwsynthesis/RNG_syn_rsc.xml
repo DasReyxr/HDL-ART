@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="RNG" Register="28" Alu="8" Lut="29">
- <SubModule name="gw_gao_inst_0" Register="416" Alu="10" Lut="441" Bsram="3"/>
- <SubModule name="LCD_inst" Register="63" Alu="27" Lut="104"/>
+<Module name="RNG" Register="28" Alu="8" Lut="29" T_Register="526(28)" T_Alu="48(8)" T_Lut="599(29)" T_Bsram="3(0)">
+ <SubModule name="gw_gao_inst_0" Register="435" Alu="13" Lut="462" Bsram="3" T_Register="435(435)" T_Alu="13(13)" T_Lut="462(462)" T_Bsram="3(3)"/>
+ <SubModule name="LCD_inst" Register="63" Alu="27" Lut="108" T_Register="63(63)" T_Alu="27(27)" T_Lut="108(108)"/>
 </Module>

@@ -1,0 +1,20 @@
+[
+ {
+  "InstFile" : "C:/Users/dasre/Documents/Knowledge-db/ghFiles/HDL-ART/0Jpcodes/9IP Cors/IP Tst/src/cordic_sine.v",
+  "InstLine" : 1,
+  "InstName" : "cordic_sine",
+  "ModuleFile" : "C:/Users/dasre/Documents/Knowledge-db/ghFiles/HDL-ART/0Jpcodes/9IP Cors/IP Tst/src/cordic_sine.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "cordic_sine",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/dasre/Documents/Knowledge-db/ghFiles/HDL-ART/0Jpcodes/9IP Cors/IP Tst/src/cordic_sine.v",
+    "InstLine" : 65,
+    "InstName" : "u_cordic",
+    "ModuleFile" : "C:/Users/dasre/Documents/Knowledge-db/ghFiles/HDL-ART/0Jpcodes/9IP Cors/IP Tst/src/cordic/cordic.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "CORDIC_Top"
+   }
+  ]
+ }
+]

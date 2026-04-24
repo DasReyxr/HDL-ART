@@ -1,17 +1,17 @@
 [
  {
-  "InstFile" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/HDL-ART/pyRNG/RNG/src/rng.vhd",
+  "InstFile" : "C:/Users/dasre/Documents/Knowledge-db/ghFiles/HDL-ART/pyRNG/RNG/src/rng.vhd",
   "InstLine" : 13,
   "InstName" : "RNG",
-  "ModuleFile" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/HDL-ART/pyRNG/RNG/src/rng.vhd",
+  "ModuleFile" : "C:/Users/dasre/Documents/Knowledge-db/ghFiles/HDL-ART/pyRNG/RNG/src/rng.vhd",
   "ModuleLine" : 13,
   "ModuleName" : "RNG",
   "SubInsts" : [
    {
-    "InstFile" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/HDL-ART/pyRNG/RNG/src/rng.vhd",
+    "InstFile" : "C:/Users/dasre/Documents/Knowledge-db/ghFiles/HDL-ART/pyRNG/RNG/src/rng.vhd",
     "InstLine" : 72,
     "InstName" : "LCD_inst",
-    "ModuleFile" : "C:/Users/Das/Dropbox/Obsidian/Fisica/tmp/HDL-ART/pyRNG/RNG/src/LCD.vhd",
+    "ModuleFile" : "C:/Users/dasre/Documents/Knowledge-db/ghFiles/HDL-ART/pyRNG/RNG/src/LCD.vhd",
     "ModuleLine" : 13,
     "ModuleName" : "LCD"
    }
