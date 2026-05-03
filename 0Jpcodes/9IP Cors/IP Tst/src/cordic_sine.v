@@ -75,7 +75,7 @@ CORDIC_Top u_cordic (
 );
 
 
-assign cosine_o = cosine_hold;
-assign sine_o = sine_hold;
+assign cosine_o = x_o_int;
+assign sine_o = y_o_int;
 
 endmodule

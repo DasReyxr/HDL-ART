@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="cordic_sine" Register="79" Alu="50" Lut="395" T_Register="476(79)" T_Alu="63(50)" T_Lut="909(395)" T_Bsram="3(0)">
+ <SubModule name="gw_gao_inst_0" Register="397" Alu="13" Lut="514" Bsram="3" T_Register="397(397)" T_Alu="13(13)" T_Lut="514(514)" T_Bsram="3(3)"/>
+</Module>
