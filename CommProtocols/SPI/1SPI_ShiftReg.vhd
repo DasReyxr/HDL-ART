@@ -16,7 +16,8 @@ entity SPI_Clock is
         clk, NSS : in std_logic;
         CPOL, CPHA : in std_logic;
         DATAIN : in std_logic_vector(FRAME_BITS-1 downto 0);
-        sample_strobe, SCLK: out std_logic
+        sample_strobe, SCLK: out std_logic;
+        MOSI : out std_logic
 	);
 end ;
 
@@ -28,27 +29,30 @@ architecture juve3dstudio of SPI_Clock is
         signal sample_strobe_d: std_logic := '0';
         signal rise, fall, spi_en : std_logic := '0';
         
-        signal state,state_next : integer range 0 to 3 := 0;
-        constant IDLE  : integer := 0;
-        constant LOAD  : integer := 1;
-        constant SHIFT : integer := 2;
-        constant DONE :  integer := 3;
+        signal state, state_next : state_t := IDLE;
+        
+        type state_t is (
+                IDLE,
+                LOAD,
+                SHIFT,
+                DONE
+                );
+
         
         signal shift_reg, shift_reg_n : std_logic_vector(FRAME_BITS-1 downto 0) := (others => '0');
         signal bit_cnt, bit_cnt_n    : integer range 0 to FRAME_BITS := 0;
         
         signal done_n, done_flag : std_logic := '0';
-        signal MOSI, MOSI_n : std_logic := '0';
+        signal MOSI_n : std_logic := '0';
         --- DEBUG SIGNALS ---
         signal mosi_dbg : std_logic_vector(1 downto 0) := (others => '0');
 begin
+        spi_en <= not NSS;
 
         process(clk)
         begin
         if rising_edge(clk) then
                 sclk_d <= sclk_out;
-                spi_en <= not NSS;
-                sample_strobe_d <= sample_strobe;
         end if;
         end process;
 
