@@ -28,16 +28,16 @@ architecture juve3dstudio of SPI_Clock is
         signal sclk_d, sclk_out : std_logic := '0';
         signal sample_strobe_d: std_logic := '0';
         signal rise, fall, spi_en : std_logic := '0';
-        
-        signal state, state_next : state_t := IDLE;
-        
-        type state_t is (
+                type state_t is (
                 IDLE,
                 LOAD,
                 SHIFT,
                 DONE
                 );
 
+
+        signal state, state_next : state_t := IDLE;
+        
         
         signal shift_reg, shift_reg_n : std_logic_vector(FRAME_BITS-1 downto 0) := (others => '0');
         signal bit_cnt, bit_cnt_n    : integer range 0 to FRAME_BITS := 0;
