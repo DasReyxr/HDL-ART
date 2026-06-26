@@ -2,7 +2,7 @@
 ---------  Das ---------
 ------ SPI_Clock  ------
 ---- I date 20/06/2026 ----
----- C date 30/05/2025 ----
+---- C date 25/06/2026 ----
 ------- Main Library -------
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
