@@ -1,0 +1,464 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.02"
+//Mon Jun 29 16:21:35 2026
+
+//Source file index table:
+//file0 "\/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd"
+`timescale 100 ps/100 ps
+module SPI_Clock (
+  clk,
+  NSS,
+  CPOL,
+  CPHA,
+  DATAIN,
+  sample_strobe,
+  SCLK,
+  MOSI
+)
+;
+input clk;
+input NSS;
+input CPOL;
+input CPHA;
+input [7:0] DATAIN;
+output sample_strobe;
+output SCLK;
+output MOSI;
+wire clk_d;
+wire NSS_d;
+wire CPOL_d;
+wire CPHA_d;
+wire n9_5;
+wire sample_strobe_d;
+wire state_next_1_4;
+wire state_1_6;
+wire state_0_8;
+wire bit_cnt_3_6;
+wire shift_reg_0_6;
+wire n57_7;
+wire n91_6;
+wire n90_6;
+wire n89_6;
+wire n45_9;
+wire n65_4;
+wire state_next_1_5;
+wire state_next_1_6;
+wire state_1_7;
+wire bit_cnt_3_7;
+wire shift_reg_7_8;
+wire n92_8;
+wire MOSI_8;
+wire shift_reg_n_0_7;
+wire n71_5;
+wire n70_5;
+wire n69_5;
+wire n68_5;
+wire n67_5;
+wire n66_5;
+wire n65_6;
+wire SCLK_d;
+wire MOSI_d;
+wire sclk_d;
+wire [7:0] DATAIN_d;
+wire [1:0] state;
+wire [3:0] bit_cnt;
+wire [7:0] shift_reg;
+wire VCC;
+wire GND;
+  IBUF clk_ibuf (
+    .O(clk_d),
+    .I(clk) 
+);
+  IBUF NSS_ibuf (
+    .O(NSS_d),
+    .I(NSS) 
+);
+  IBUF CPOL_ibuf (
+    .O(CPOL_d),
+    .I(CPOL) 
+);
+  IBUF CPHA_ibuf (
+    .O(CPHA_d),
+    .I(CPHA) 
+);
+  IBUF DATAIN_0_ibuf (
+    .O(DATAIN_d[0]),
+    .I(DATAIN[0]) 
+);
+  IBUF DATAIN_1_ibuf (
+    .O(DATAIN_d[1]),
+    .I(DATAIN[1]) 
+);
+  IBUF DATAIN_2_ibuf (
+    .O(DATAIN_d[2]),
+    .I(DATAIN[2]) 
+);
+  IBUF DATAIN_3_ibuf (
+    .O(DATAIN_d[3]),
+    .I(DATAIN[3]) 
+);
+  IBUF DATAIN_4_ibuf (
+    .O(DATAIN_d[4]),
+    .I(DATAIN[4]) 
+);
+  IBUF DATAIN_5_ibuf (
+    .O(DATAIN_d[5]),
+    .I(DATAIN[5]) 
+);
+  IBUF DATAIN_6_ibuf (
+    .O(DATAIN_d[6]),
+    .I(DATAIN[6]) 
+);
+  IBUF DATAIN_7_ibuf (
+    .O(DATAIN_d[7]),
+    .I(DATAIN[7]) 
+);
+  OBUF sample_strobe_obuf (
+    .O(sample_strobe),
+    .I(sample_strobe_d) 
+);
+  OBUF SCLK_obuf (
+    .O(SCLK),
+    .I(SCLK_d) 
+);
+  OBUF MOSI_obuf (
+    .O(MOSI),
+    .I(MOSI_d) 
+);
+  LUT3 n9_s1 (
+    .F(n9_5),
+    .I0(CPOL_d),
+    .I1(SCLK_d),
+    .I2(NSS_d) 
+);
+defparam n9_s1.INIT=8'hA3;
+  LUT4 sample_strobe_d_s (
+    .F(sample_strobe_d),
+    .I0(NSS_d),
+    .I1(SCLK_d),
+    .I2(sclk_d),
+    .I3(CPHA_d) 
+);
+defparam sample_strobe_d_s.INIT=16'h1004;
+  LUT4 state_next_1_s1 (
+    .F(state_next_1_4),
+    .I0(state_next_1_5),
+    .I1(state[1]),
+    .I2(sample_strobe_d),
+    .I3(state_next_1_6) 
+);
+defparam state_next_1_s1.INIT=16'hE000;
+  LUT4 state_1_s2 (
+    .F(state_1_6),
+    .I0(n65_4),
+    .I1(state_1_7),
+    .I2(n45_9),
+    .I3(sample_strobe_d) 
+);
+defparam state_1_s2.INIT=16'h8F00;
+  LUT2 state_0_s3 (
+    .F(state_0_8),
+    .I0(state_next_1_4),
+    .I1(state_1_6) 
+);
+defparam state_0_s3.INIT=4'hE;
+  LUT3 bit_cnt_3_s2 (
+    .F(bit_cnt_3_6),
+    .I0(bit_cnt_3_7),
+    .I1(state_1_7),
+    .I2(sample_strobe_d) 
+);
+defparam bit_cnt_3_s2.INIT=8'hE0;
+  LUT3 shift_reg_0_s2 (
+    .F(shift_reg_0_6),
+    .I0(n45_9),
+    .I1(state_next_1_5),
+    .I2(sample_strobe_d) 
+);
+defparam shift_reg_0_s2.INIT=8'h40;
+  LUT3 n57_s2 (
+    .F(n57_7),
+    .I0(state[1]),
+    .I1(state[0]),
+    .I2(shift_reg[7]) 
+);
+defparam n57_s2.INIT=8'h40;
+  LUT3 n91_s1 (
+    .F(n91_6),
+    .I0(n45_9),
+    .I1(bit_cnt[0]),
+    .I2(bit_cnt[1]) 
+);
+defparam n91_s1.INIT=8'h14;
+  LUT4 n90_s1 (
+    .F(n90_6),
+    .I0(bit_cnt[0]),
+    .I1(bit_cnt[1]),
+    .I2(n45_9),
+    .I3(bit_cnt[2]) 
+);
+defparam n90_s1.INIT=16'h0708;
+  LUT4 n89_s1 (
+    .F(n89_6),
+    .I0(n45_9),
+    .I1(bit_cnt[1]),
+    .I2(bit_cnt[2]),
+    .I3(bit_cnt[0]) 
+);
+defparam n89_s1.INIT=16'h4000;
+  LUT3 n45_s4 (
+    .F(n45_9),
+    .I0(bit_cnt[3]),
+    .I1(state[1]),
+    .I2(state[0]) 
+);
+defparam n45_s4.INIT=8'hEF;
+  LUT2 n65_s1 (
+    .F(n65_4),
+    .I0(state[0]),
+    .I1(state[1]) 
+);
+defparam n65_s1.INIT=4'h4;
+  LUT3 state_next_1_s2 (
+    .F(state_next_1_5),
+    .I0(bit_cnt[0]),
+    .I1(bit_cnt[1]),
+    .I2(bit_cnt[2]) 
+);
+defparam state_next_1_s2.INIT=8'h01;
+  LUT2 state_next_1_s3 (
+    .F(state_next_1_6),
+    .I0(bit_cnt[3]),
+    .I1(state[0]) 
+);
+defparam state_next_1_s3.INIT=4'h1;
+  LUT4 state_1_s3 (
+    .F(state_1_7),
+    .I0(bit_cnt[0]),
+    .I1(bit_cnt[1]),
+    .I2(bit_cnt[2]),
+    .I3(bit_cnt[3]) 
+);
+defparam state_1_s3.INIT=16'h0100;
+  LUT3 bit_cnt_3_s3 (
+    .F(bit_cnt_3_7),
+    .I0(state[0]),
+    .I1(bit_cnt[3]),
+    .I2(state[1]) 
+);
+defparam bit_cnt_3_s3.INIT=8'h07;
+  LUT4 shift_reg_7_s3 (
+    .F(shift_reg_7_8),
+    .I0(shift_reg_n_0_7),
+    .I1(n45_9),
+    .I2(state_next_1_5),
+    .I3(sample_strobe_d) 
+);
+defparam shift_reg_7_s3.INIT=16'hBAAA;
+  LUT4 n92_s2 (
+    .F(n92_8),
+    .I0(bit_cnt[0]),
+    .I1(bit_cnt[3]),
+    .I2(state[1]),
+    .I3(state[0]) 
+);
+defparam n92_s2.INIT=16'h0100;
+  LUT3 MOSI_s5 (
+    .F(MOSI_8),
+    .I0(state[0]),
+    .I1(state[1]),
+    .I2(sample_strobe_d) 
+);
+defparam MOSI_s5.INIT=8'hB0;
+  LUT3 shift_reg_n_0_s3 (
+    .F(shift_reg_n_0_7),
+    .I0(sample_strobe_d),
+    .I1(state[0]),
+    .I2(state[1]) 
+);
+defparam shift_reg_n_0_s3.INIT=8'h20;
+  LUT4 n71_s1 (
+    .F(n71_5),
+    .I0(DATAIN_d[1]),
+    .I1(shift_reg[0]),
+    .I2(state[0]),
+    .I3(state[1]) 
+);
+defparam n71_s1.INIT=16'hACAA;
+  LUT4 n70_s1 (
+    .F(n70_5),
+    .I0(DATAIN_d[2]),
+    .I1(shift_reg[1]),
+    .I2(state[0]),
+    .I3(state[1]) 
+);
+defparam n70_s1.INIT=16'hACAA;
+  LUT4 n69_s1 (
+    .F(n69_5),
+    .I0(DATAIN_d[3]),
+    .I1(shift_reg[2]),
+    .I2(state[0]),
+    .I3(state[1]) 
+);
+defparam n69_s1.INIT=16'hACAA;
+  LUT4 n68_s1 (
+    .F(n68_5),
+    .I0(DATAIN_d[4]),
+    .I1(shift_reg[3]),
+    .I2(state[0]),
+    .I3(state[1]) 
+);
+defparam n68_s1.INIT=16'hACAA;
+  LUT4 n67_s1 (
+    .F(n67_5),
+    .I0(DATAIN_d[5]),
+    .I1(shift_reg[4]),
+    .I2(state[0]),
+    .I3(state[1]) 
+);
+defparam n67_s1.INIT=16'hACAA;
+  LUT4 n66_s1 (
+    .F(n66_5),
+    .I0(DATAIN_d[6]),
+    .I1(shift_reg[5]),
+    .I2(state[0]),
+    .I3(state[1]) 
+);
+defparam n66_s1.INIT=16'hACAA;
+  LUT4 n65_s2 (
+    .F(n65_6),
+    .I0(DATAIN_d[7]),
+    .I1(shift_reg[6]),
+    .I2(state[0]),
+    .I3(state[1]) 
+);
+defparam n65_s2.INIT=16'hACAA;
+  DFF sclk_out_s0 (
+    .Q(SCLK_d),
+    .D(n9_5),
+    .CLK(clk_d) 
+);
+defparam sclk_out_s0.INIT=1'b0;
+  DFFRE state_1_s0 (
+    .Q(state[1]),
+    .D(VCC),
+    .CLK(clk_d),
+    .CE(state_1_6),
+    .RESET(state_next_1_4) 
+);
+defparam state_1_s0.INIT=1'b0;
+  DFFE bit_cnt_3_s0 (
+    .Q(bit_cnt[3]),
+    .D(n89_6),
+    .CLK(clk_d),
+    .CE(bit_cnt_3_6) 
+);
+defparam bit_cnt_3_s0.INIT=1'b0;
+  DFFE bit_cnt_2_s0 (
+    .Q(bit_cnt[2]),
+    .D(n90_6),
+    .CLK(clk_d),
+    .CE(bit_cnt_3_6) 
+);
+defparam bit_cnt_2_s0.INIT=1'b0;
+  DFFE bit_cnt_1_s0 (
+    .Q(bit_cnt[1]),
+    .D(n91_6),
+    .CLK(clk_d),
+    .CE(bit_cnt_3_6) 
+);
+defparam bit_cnt_1_s0.INIT=1'b0;
+  DFFE bit_cnt_0_s0 (
+    .Q(bit_cnt[0]),
+    .D(n92_8),
+    .CLK(clk_d),
+    .CE(bit_cnt_3_6) 
+);
+defparam bit_cnt_0_s0.INIT=1'b0;
+  DFFE shift_reg_7_s0 (
+    .Q(shift_reg[7]),
+    .D(n65_6),
+    .CLK(clk_d),
+    .CE(shift_reg_7_8) 
+);
+defparam shift_reg_7_s0.INIT=1'b0;
+  DFFE shift_reg_6_s0 (
+    .Q(shift_reg[6]),
+    .D(n66_5),
+    .CLK(clk_d),
+    .CE(shift_reg_7_8) 
+);
+defparam shift_reg_6_s0.INIT=1'b0;
+  DFFE shift_reg_5_s0 (
+    .Q(shift_reg[5]),
+    .D(n67_5),
+    .CLK(clk_d),
+    .CE(shift_reg_7_8) 
+);
+defparam shift_reg_5_s0.INIT=1'b0;
+  DFFE shift_reg_4_s0 (
+    .Q(shift_reg[4]),
+    .D(n68_5),
+    .CLK(clk_d),
+    .CE(shift_reg_7_8) 
+);
+defparam shift_reg_4_s0.INIT=1'b0;
+  DFFE shift_reg_3_s0 (
+    .Q(shift_reg[3]),
+    .D(n69_5),
+    .CLK(clk_d),
+    .CE(shift_reg_7_8) 
+);
+defparam shift_reg_3_s0.INIT=1'b0;
+  DFFE shift_reg_2_s0 (
+    .Q(shift_reg[2]),
+    .D(n70_5),
+    .CLK(clk_d),
+    .CE(shift_reg_7_8) 
+);
+defparam shift_reg_2_s0.INIT=1'b0;
+  DFFE shift_reg_1_s0 (
+    .Q(shift_reg[1]),
+    .D(n71_5),
+    .CLK(clk_d),
+    .CE(shift_reg_7_8) 
+);
+defparam shift_reg_1_s0.INIT=1'b0;
+  DFFRE shift_reg_0_s0 (
+    .Q(shift_reg[0]),
+    .D(DATAIN_d[0]),
+    .CLK(clk_d),
+    .CE(shift_reg_0_6),
+    .RESET(shift_reg_n_0_7) 
+);
+defparam shift_reg_0_s0.INIT=1'b0;
+  DFFE MOSI_s2 (
+    .Q(MOSI_d),
+    .D(n57_7),
+    .CLK(clk_d),
+    .CE(MOSI_8) 
+);
+  DFF sclk_d_s0 (
+    .Q(sclk_d),
+    .D(SCLK_d),
+    .CLK(clk_d) 
+);
+defparam sclk_d_s0.INIT=1'b0;
+  DFFE state_0_s2 (
+    .Q(state[0]),
+    .D(n45_9),
+    .CLK(clk_d),
+    .CE(state_0_8) 
+);
+defparam state_0_s2.INIT=1'b0;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* SPI_Clock */

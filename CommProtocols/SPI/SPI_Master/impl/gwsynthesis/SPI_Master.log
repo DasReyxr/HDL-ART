@@ -1,0 +1,29 @@
+GowinSynthesis start
+Running parser ...
+Analyzing VHDL file '/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd'
+Analyzing entity 'spi_clock'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":11)
+Analyzing architecture 'juve3dstudio'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":27)
+WARN  (EX4967) : Cannot read from 'out' object 'mosi', use 'buffer' or 'inout' instead("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":90)
+WARN  (EX4967) : Cannot read from 'out' object 'sample_strobe', use 'buffer' or 'inout' instead("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":106)
+WARN  (EX4967) : Cannot read from 'out' object 'mosi', use 'buffer' or 'inout' instead("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":118)
+Processing 'SPI_Clock(juve3dstudio)'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":11)
+NOTE  (EX0101) : Current top module is "SPI_Clock"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/impl/gwsynthesis/SPI_Master.vg" completed
+[100%] Generate report file "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/impl/gwsynthesis/SPI_Master_syn.rpt.html" completed
+GowinSynthesis finish
