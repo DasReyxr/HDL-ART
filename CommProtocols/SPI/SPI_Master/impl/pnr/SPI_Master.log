@@ -1,11 +1,12 @@
 Reading netlist file: "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/impl/gwsynthesis/SPI_Master.vg"
 Parsing netlist file "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/impl/gwsynthesis/SPI_Master.vg" completed
 Processing netlist completed
+Reading constraint file: "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.cst"
+Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1132) :  'clk' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -24,5 +25,5 @@ Generate file "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI
 Generate file "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/impl/pnr/SPI_Master.rpt.html" completed
 Generate file "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/impl/pnr/SPI_Master.rpt.txt" completed
 Generate file "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/impl/pnr/SPI_Master.tr.html" completed
-Mon Jun 29 16:21:36 2026
+Mon Jul 20 18:44:12 2026
 
