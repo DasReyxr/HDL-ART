@@ -1,0 +1,10 @@
+v 4
+file . "tb_Top_SPITest.vhd" "31433c3a5e9ddcce95f2ce8f14ef1514b83719f9" "20260720230333.450":
+  entity tb_top_spitest at 1( 0) + 0 on 31;
+  architecture sim of tb_top_spitest at 7( 90) + 0 on 32;
+file . "Top_SPITest.vhd" "725da59e8cc3900cd0203af79ab7047fe0a2df3a" "20260720230333.449":
+  entity top_spitest at 7( 164) + 0 on 29;
+  architecture juve3dstudio of top_spitest at 22( 391) + 0 on 30;
+file . "SPI_Master.vhd" "1346d06d5bd8572b4aabdad3642fbafa4ba381d6" "20260720230333.446":
+  entity spi_clock at 7( 164) + 0 on 27;
+  architecture juve3dstudio of spi_clock at 27( 598) + 0 on 28;

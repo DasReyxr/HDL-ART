@@ -5,6 +5,11 @@
    "Library" : "work",
    "Path" : "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd",
    "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/Top_SPITest.vhd",
+   "Type" : "vhdl"
   }
  ],
  "IncludePath" : [

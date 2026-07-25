@@ -1,10 +1,20 @@
 [
  {
-  "InstFile" : "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd",
+  "InstFile" : "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/Top_SPITest.vhd",
   "InstLine" : 11,
-  "InstName" : "SPI_Clock",
-  "ModuleFile" : "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd",
+  "InstName" : "Top_SPITest",
+  "ModuleFile" : "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/Top_SPITest.vhd",
   "ModuleLine" : 11,
-  "ModuleName" : "SPI_Clock"
+  "ModuleName" : "Top_SPITest",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/Top_SPITest.vhd",
+    "InstLine" : 53,
+    "InstName" : "U0",
+    "ModuleFile" : "/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd",
+    "ModuleLine" : 11,
+    "ModuleName" : "SPI_Clock"
+   }
+  ]
  }
 ]

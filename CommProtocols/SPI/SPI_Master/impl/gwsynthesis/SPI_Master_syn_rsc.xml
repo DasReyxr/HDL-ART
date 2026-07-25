@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="SPI_Clock" Register="17" Lut="28" T_Register="17(17)" T_Lut="28(28)"/>
+<Module name="Top_SPITest" Register="25" Alu="23" Lut="9" T_Register="48(25)" T_Alu="23(23)" T_Lut="51(9)">
+ <SubModule name="U0" Register="23" Lut="42" T_Register="23(23)" T_Lut="42(42)"/>
+</Module>

@@ -2,12 +2,13 @@ GowinSynthesis start
 Running parser ...
 Analyzing VHDL file '/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd'
 Analyzing entity 'spi_clock'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":11)
-Analyzing architecture 'juve3dstudio'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":27)
-WARN  (EX4967) : Cannot read from 'out' object 'mosi', use 'buffer' or 'inout' instead("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":90)
-WARN  (EX4967) : Cannot read from 'out' object 'sample_strobe', use 'buffer' or 'inout' instead("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":106)
-WARN  (EX4967) : Cannot read from 'out' object 'mosi', use 'buffer' or 'inout' instead("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":118)
-Processing 'SPI_Clock(juve3dstudio)'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":11)
-NOTE  (EX0101) : Current top module is "SPI_Clock"
+Analyzing architecture 'juve3dstudio'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":26)
+Analyzing VHDL file '/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/Top_SPITest.vhd'
+Analyzing entity 'top_spitest'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/Top_SPITest.vhd":11)
+Analyzing architecture 'juve3dstudio'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/Top_SPITest.vhd":22)
+Processing 'Top_SPITest(juve3dstudio)'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/Top_SPITest.vhd":11)
+Processing 'SPI_Clock(clk_div=200)(juve3dstudio)'("/home/dasreyxr/wkn/Knowledge-db/ghfiles/HDL-ART/CommProtocols/SPI/SPI_Master/src/SPI_Master.vhd":11)
+NOTE  (EX0101) : Current top module is "Top_SPITest"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
