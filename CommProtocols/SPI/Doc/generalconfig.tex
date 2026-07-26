@@ -1,0 +1,124 @@
+\usepackage{tabularx}
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{multicol}
+\usepackage{fancyvrb}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{parskip}
+% \usepackage[backend=biber,style=apa]{biblatex} % Commented: conflicts with numeric citations
+% \addbibresource{references.bib} % Commented: using manual thebibliography instead
+\usepackage[numbers]{natbib} % For numeric [1] style citations
+\usepackage{hyperref}
+\usepackage{fontawesome5} % For the GitHub icon
+\usepackage[justification=centering]{caption}
+% \usepackage[linesnumbered,ruled,vlined]{algorithm2e} % Conflicts with algorithm/algorithmicx
+\setlength{\topmargin}{-0.4in}
+\setlength{\textheight}{9in}
+\usepackage{comment}
+\usepackage{listings}%
+\usepackage{float}
+% In your preamble:
+\usepackage{enumitem} % For custom list formatting
+\newlist{questions}{enumerate}{1}
+\setlist[questions,1]{
+  label=\textbf{Q\arabic*:}, % Label format "Q1:", "Q2:", ...
+  leftmargin=2em,           % Indent spacing
+  itemsep=1em               % Space between questions
+}
+
+
+
+%%%%
+
+
+%% as per the requirement new theorem styles can be included as shown below
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}%
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+\newtheorem{example}{Example}%
+\newtheorem{definition}{Definition}%
+
+\newtheorem{remark}{Remark}%
+
+\raggedbottom
+
+\usepackage{amssymb}
+
+% Code Packages
+
+\usepackage{listings}
+\usepackage{xcolor}
+\newcommand{\frt}[1]{\tilde{f}\left\{#1\right\}}
+\newcommand{\frtn}[1]{f\left\{#1\right\}}
+\newcommand{\frtP}[1]{\tilde{\text{f}}\left(#1\right)}
+
+\newcommand{\frtnP}[1]{\text{f}\left(#1\right)}
+
+\definecolor{headerbackground}{rgb}{1, 1, 1}
+\definecolor{rulecolor}{rgb}{0.7, 0.7, 0.7}
+
+% Define C keywords including standard library functions
+\lstdefinestyle{algorithmstyle}{
+  backgroundcolor=\color{white},
+  basicstyle=\ttfamily\scriptsize,
+  keywordstyle=\bfseries, % Bold for keywords
+  commentstyle=\itshape, % Italic for comments
+  stringstyle=,
+  numberstyle=\tiny,
+  numbers=left,
+  numbersep=10pt,
+  breaklines=true,
+  frame=trbl,
+  framerule=0.8pt,
+  rulecolor=\color{rulecolor},
+  framesep=5pt,
+  xleftmargin=15pt,
+  xrightmargin=5pt,
+  language=C, % This is crucial
+  tabsize=2,
+  showstringspaces=false,
+  alsoletter={\_},
+  morekeywords={printf, scanf, malloc, free, sizeof, puts, gets}, % Add standard library functions
+}
+
+\newcommand{\codeheader}[1]{%
+  \noindent%
+  \fcolorbox{rulecolor}{headerbackground}{%
+    \makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule][l]{%
+      \textbf{Code:} \ttfamily{#1}%
+    }%
+  }%
+  \vspace{-0.5\baselineskip}
+}
+
+\newcommand{\magn}[1]{
+     \left[#1\right]
+}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={FFT},
+    pdfauthor={Das Reyes},
+    bookmarks=true,
+    pdfpagemode=FullScreen,
+}
+
